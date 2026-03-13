@@ -102,13 +102,6 @@ body {
     height: 600px;
 }
 
-.update-time {
-    text-align: center;
-    color: var(--text-secondary);
-    font-size: 14px;
-    margin-top: 10px;
-}
-
 @media (max-width: 768px) {
     .container {
         padding: 15px;
