@@ -8,7 +8,7 @@ const savedTheme = localStorage.getItem('theme') || 'light';
 body.setAttribute('data-theme', savedTheme);
 updateThemeIcon(savedTheme);
 
-// Category color mapping
+// Category color mapping for Y-axis labels
 const categoryColors = {
     '股指': { light: '#FF6B6B', dark: '#FF6B6B' },
     '加密货币': { light: '#4ECDC4', dark: '#4ECDC4' },
@@ -41,22 +41,6 @@ function updateThemeIcon(theme) {
 function getCategoryColor(category, theme) {
     const color = categoryColors[category] || defaultColor;
     return color[theme];
-}
-
-function renderLegend(items, theme) {
-    const legendContainer = document.getElementById('legend');
-    if (!legendContainer) return;
-
-    // Get unique categories
-    const categories = [...new Set(items.map(item => item.category).filter(Boolean))];
-
-    legendContainer.innerHTML = categories.map(category => {
-        const color = getCategoryColor(category, theme);
-        return `<div class="legend-item">
-            <span class="legend-dot" style="background-color: ${color}"></span>
-            <span>${category}</span>
-        </div>`;
-    }).join('');
 }
 
 // Chart configuration
@@ -109,25 +93,35 @@ function renderChart(data) {
     const assetData = data.assets[0];
     const items = assetData.data;
 
-    // Sort by value descending (top to bottom)
+    // Sort by value descending (highest at top)
     const sortedItems = [...items].sort((a, b) => b.value - a.value);
-
-    // Render legend
-    renderLegend(sortedItems, theme);
 
     // Prepare data for ECharts
     const chartData = sortedItems.map(item => {
         const category = item.category || '';
-        const color = getCategoryColor(category, theme);
+        const categoryColor = getCategoryColor(category, theme);
+        const barColor = item.value >= 0 ? '#FF3B30' : '#34C759';
         return {
             name: item.name,
             value: item.value,
             category: category,
             itemStyle: {
-                color: item.value >= 0 ? color : '#34C759'
+                color: barColor
             }
         };
     });
+
+    // Create Y-axis labels with category colors
+    const yAxisData = chartData.map(item => item.name);
+
+    // Get unique categories for legend
+    const categories = [...new Set(sortedItems.map(item => item.category).filter(Boolean))];
+    const legendData = categories.map(category => ({
+        name: category,
+        itemStyle: {
+            color: getCategoryColor(category, theme)
+        }
+    }));
 
     const option = {
         backgroundColor: colors.bg,
@@ -141,6 +135,14 @@ function renderChart(data) {
             textStyle: {
                 fontSize: 20,
                 fontWeight: 600
+            }
+        },
+        legend: {
+            show: true,
+            top: 50,
+            data: legendData,
+            textStyle: {
+                color: colors.textSecondary
             }
         },
         tooltip: {
@@ -159,7 +161,7 @@ function renderChart(data) {
             left: '10%',
             right: '15%',
             bottom: '3%',
-            top: '15%',
+            top: '100',
             containLabel: true
         },
         xAxis: {
@@ -180,12 +182,18 @@ function renderChart(data) {
         },
         yAxis: {
             type: 'category',
-            data: chartData.map(item => item.name),
+            data: yAxisData,
             axisLine: {
                 lineStyle: { color: colors.textSecondary }
             },
             axisLabel: {
-                color: colors.textSecondary,
+                color: function(value, index) {
+                    const item = chartData[index];
+                    if (item && item.category) {
+                        return getCategoryColor(item.category, theme);
+                    }
+                    return colors.textSecondary;
+                },
                 fontSize: 13
             }
         },
