@@ -8,6 +8,19 @@ const savedTheme = localStorage.getItem('theme') || 'light';
 body.setAttribute('data-theme', savedTheme);
 updateThemeIcon(savedTheme);
 
+// Category color mapping
+const categoryColors = {
+    '股指': { light: '#FF6B6B', dark: '#FF6B6B' },
+    '加密货币': { light: '#4ECDC4', dark: '#4ECDC4' },
+    '货币': { light: '#45B7D1', dark: '#45B7D1' },
+    '能源': { light: '#FFA07A', dark: '#FFA07A' },
+    '贵金属': { light: '#FFD700', dark: '#FFD700' },
+    '金属': { light: '#9370DB', dark: '#9370DB' }
+};
+
+// Default color for unknown categories
+const defaultColor = { light: '#888888', dark: '#888888' };
+
 themeToggle.addEventListener('click', () => {
     const currentTheme = body.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -16,8 +29,8 @@ themeToggle.addEventListener('click', () => {
     updateThemeIcon(newTheme);
 
     // Re-render chart with new theme
-    if (window.myChart) {
-        updateChartTheme(newTheme);
+    if (window.myChart && window.chartData) {
+        renderChart(window.chartData);
     }
 });
 
@@ -25,20 +38,37 @@ function updateThemeIcon(theme) {
     themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
 }
 
+function getCategoryColor(category, theme) {
+    const color = categoryColors[category] || defaultColor;
+    return color[theme];
+}
+
+function renderLegend(items, theme) {
+    const legendContainer = document.getElementById('legend');
+    if (!legendContainer) return;
+
+    // Get unique categories
+    const categories = [...new Set(items.map(item => item.category).filter(Boolean))];
+
+    legendContainer.innerHTML = categories.map(category => {
+        const color = getCategoryColor(category, theme);
+        return `<div class="legend-item">
+            <span class="legend-dot" style="background-color: ${color}"></span>
+            <span>${category}</span>
+        </div>`;
+    }).join('');
+}
+
 // Chart configuration
 let myChart;
 
 const lightColors = {
-    up: '#FF3B30',
-    down: '#34C759',
     bg: '#FFFFFF',
     text: '#1D1D1F',
     textSecondary: '#86868B'
 };
 
 const darkColors = {
-    up: '#FF453A',
-    down: '#30D158',
     bg: '#1C1C1E',
     text: '#FFFFFF',
     textSecondary: '#98989D'
@@ -47,38 +77,6 @@ const darkColors = {
 function getColors() {
     const theme = body.getAttribute('data-theme');
     return theme === 'dark' ? darkColors : lightColors;
-}
-
-function updateChartTheme(theme) {
-    const colors = getColors();
-
-    // Update item colors
-    const data = myChart.getOption().series[0].data;
-    const newData = data.map(item => ({
-        ...item,
-        itemStyle: {
-            color: item.value >= 0 ? colors.up : colors.down
-        }
-    }));
-
-    myChart.setOption({
-        backgroundColor: colors.bg,
-        textStyle: {
-            color: colors.text
-        },
-        xAxis: {
-            axisLine: { lineStyle: { color: colors.textSecondary } },
-            axisLabel: { color: colors.textSecondary },
-            splitLine: { lineStyle: { color: colors.textSecondary + '30' } }
-        },
-        yAxis: {
-            axisLine: { lineStyle: { color: colors.textSecondary } },
-            axisLabel: { color: colors.textSecondary }
-        },
-        series: [{
-            data: newData
-        }]
-    });
 }
 
 // Load data and render chart
@@ -95,20 +93,41 @@ async function loadData() {
 
 function renderChart(data) {
     const colors = getColors();
+    const theme = body.getAttribute('data-theme');
     const chartDom = document.getElementById('chart');
+
+    // Store data for theme switching
+    window.chartData = data;
+
+    // Dispose existing chart if exists
+    if (myChart) {
+        myChart.dispose();
+    }
+
     myChart = echarts.init(chartDom);
 
     const assetData = data.assets[0];
     const items = assetData.data;
 
+    // Sort by value descending (top to bottom)
+    const sortedItems = [...items].sort((a, b) => b.value - a.value);
+
+    // Render legend
+    renderLegend(sortedItems, theme);
+
     // Prepare data for ECharts
-    const chartData = items.map(item => ({
-        name: item.name,
-        value: item.value,
-        itemStyle: {
-            color: item.value >= 0 ? colors.up : colors.down
-        }
-    }));
+    const chartData = sortedItems.map(item => {
+        const category = item.category || '';
+        const color = getCategoryColor(category, theme);
+        return {
+            name: item.name,
+            value: item.value,
+            category: category,
+            itemStyle: {
+                color: item.value >= 0 ? color : '#34C759'
+            }
+        };
+    });
 
     const option = {
         backgroundColor: colors.bg,
@@ -132,12 +151,13 @@ function renderChart(data) {
             formatter: function(params) {
                 const data = params[0];
                 const sign = data.value >= 0 ? '+' : '';
-                return `<strong>${data.name}</strong><br/>涨跌幅: ${sign}${data.value.toFixed(2)}%`;
+                const category = data.data.category ? `【${data.data.category}】` : '';
+                return `<strong>${category}${data.name}</strong><br/>涨跌幅: ${sign}${data.value.toFixed(2)}%`;
             }
         },
         grid: {
-            left: '3%',
-            right: '4%',
+            left: '10%',
+            right: '15%',
             bottom: '3%',
             top: '15%',
             containLabel: true
@@ -199,7 +219,9 @@ function renderChart(data) {
 
     // Responsive
     window.addEventListener('resize', () => {
-        myChart.resize();
+        if (myChart) {
+            myChart.resize();
+        }
     });
 }
 
