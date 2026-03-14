@@ -6,9 +6,7 @@
     --accent-color: #007AFF;
     --shadow-color: rgba(0, 0, 0, 0.08);
     --border-radius: 20px;
-}
-
-[data-theme="dark"] {
+}[data-theme="dark"] {
     --bg-color: #000000;
     --card-bg: #1C1C1E;
     --text-primary: #FFFFFF;
@@ -33,7 +31,7 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -82,6 +80,11 @@ body {
 .main {
     display: flex;
     flex-direction: column;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -102,9 +105,196 @@ body {
     height: 600px;
 }
 
-@media (max-width: 768px) {
+.card-placeholder {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.placeholder-content {
+    color: var(--text-secondary);
+}
+
+.global-review,
+.us-heatmap,
+.china-heatmap {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--text-secondary);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+}
+
+.card-subtitle {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.review-content,
+.heatmap-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.loading {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 40px 0;
+}
+
+.region-section {
+    margin-bottom: 24px;
+}
+
+.region-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    padding: 8px 14px;
+    background: rgba(0, 122, 255, 0.15);
+    border-radius: 12px;
+    display: inline-block;
+    letter-spacing: 0.3px;
+}
+
+[data-theme="dark"] .region-title {
+    background: rgba(255, 159, 10, 0.15);
+}
+
+/* ==================== Apple 风格全球回顾卡片优化 ==================== */
+
+/* 列表项调整为纯净的一行结构 */
+.index-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 4px;
+    margin-bottom: 0;
+    background: transparent;
+    border: none;
+    border-radius: 6px; /* 悬浮时使用的圆角 */
+    border-bottom: 0.5px solid rgba(134, 134, 139, 0.25);
+    transition: background-color 0.2s ease;
+}
+
+.index-item:last-child {
+    border-bottom: none;
+}
+
+/* 悬浮时消除底边框视觉突兀，给个极浅的背景色 */
+.index-item:hover {
+    transform: none;
+    box-shadow: none;
+    background: rgba(134, 134, 139, 0.08);
+}
+
+[data-theme="dark"] .index-item {
+    border-bottom-color: rgba(152, 152, 157, 0.2);
+}
+
+[data-theme="dark"] .index-item:hover {
+    background: rgba(152, 152, 157, 0.15);
+}
+
+/* 指数名称居左 */
+.index-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    min-width: 75px;
+    white-space: nowrap;
+}
+
+/* 中间的数值数据组，向右对齐 */
+.index-data {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px; /* 控制各个数据项之间的间距 */
+    margin: 0 16px;
+}
+
+/* 每个数据块（如：涨跌 -34） */
+.data-group {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+/* Apple 风格小标签 */
+.data-group .label {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* 数值应用 tabular-nums 保证数字不会抖动/等宽对齐 */
+.data-group .value {
+    font-size: 14px;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+/* 涨跌颜色调整为更护眼的红绿 */
+.data-group .value.positive { color: #FF3B30; }
+.data-group .value.negative { color: #34C759; }
+
+/* 尾部的涨跌幅胶囊 / Apple 风格实色徽章 */
+.index-change {
+    font-size: 15px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    padding: 6px 8px;
+    border-radius: 6px;
+    min-width: 78px;
+    text-align: right; /* 数字靠右对齐 */
+}
+
+/* 取消原来的渐变色，使用苹果原生的扁平实色 */
+.index-change.positive {
+    color: #FFFFFF;
+    background-color: #FF3B30;
+}
+
+.index-change.negative {
+    color: #FFFFFF;
+    background-color: #34C759;
+}
+
+/* ==================== 响应式处理 ==================== */
+
+@media (max-width: 900px) {
     .container {
         padding: 15px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
     }
 
     .title {
@@ -115,7 +305,158 @@ body {
         padding: 20px;
     }
 
-    .chart {
+    .chart, .card-placeholder, .global-review {
         height: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .index-data {
+        gap: 8px;
+        margin: 0 8px;
+    }
+    .data-group .label {
+        font-size: 11px;
+    }
+    .data-group .value {
+        font-size: 13px;
+    }
+    .index-name {
+        font-size: 14px;
+    }
+    .index-change {
+        min-width: 68px;
+        font-size: 13px;
+        padding: 5px 6px;
+    }
+}
+
+/* ==================== 美股热力图样式 ==================== */
+
+.us-heatmap {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heatmap-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.heatmap-item {
+    padding: 12px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100px;
+    aspect-ratio: 1;
+}
+
+.heatmap-item.positive {
+    background: linear-gradient(135deg, #FF3B30, #FF6B6B);
+}
+
+.heatmap-item.negative {
+    background: linear-gradient(135deg, #34C759, #30D158);
+}
+
+.heatmap-item.neutral {
+    background: linear-gradient(135deg, #8E8E93, #AEAEB2);
+}
+
+.heatmap-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.stock-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.stock-price {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+    font-variant-numeric: tabular-nums;
+}
+
+.stock-change {
+    font-size: 11px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+    font-variant-numeric: tabular-nums;
+}
+
+.stock-market-cap {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .chart, .card-placeholder, .global-review, .us-heatmap, .china-heatmap {
+        height: 500px;
+    }
+
+    .heatmap-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+    }
+
+    .heatmap-item {
+        min-height: 90px;
+        padding: 10px 6px;
+    }
+
+    .stock-name {
+        font-size: 11px;
+    }
+
+    .stock-price {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .heatmap-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .heatmap-item {
+        min-height: 95px;
+        padding: 8px 4px;
+    }
+
+    .stock-name {
+        font-size: 11px;
+    }
+
+    .stock-price {
+        font-size: 12px;
+    }
+
+    .stock-change {
+        font-size: 10px;
+    }
+
+    .stock-market-cap {
+        font-size: 9px;
     }
 }
