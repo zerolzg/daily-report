@@ -8,18 +8,18 @@ const savedTheme = localStorage.getItem("theme") || "light";
 body.setAttribute("data-theme", savedTheme);
 updateThemeIcon(savedTheme);
 
-// Category color mapping for Y-axis labels
+// Category color mapping for Y-axis labels (简化为单色，移除手动 light/dark 映射)
 const categoryColors = {
-  股指: { light: "#FF6B6B", dark: "#FF6B6B" },
-  加密货币: { light: "#4ECDC4", dark: "#4ECDC4" },
-  货币: { light: "#45B7D1", dark: "#45B7D1" },
-  能源: { light: "#FFA07A", dark: "#FFA07A" },
-  贵金属: { light: "#FFD700", dark: "#FFD700" },
-  金属: { light: "#9370DB", dark: "#9370DB" },
+  股指: "#E11D48",
+  加密货币: "#0891B2",
+  货币: "#2563EB",
+  能源: "#EA580C",
+  贵金属: "#B45309",
+  金属: "#7C3AED",
 };
 
 // Default color for unknown categories
-const defaultColor = { light: "#888888", dark: "#888888" };
+const defaultColor = "#888888";
 
 themeToggle.addEventListener("click", () => {
   const currentTheme = body.getAttribute("data-theme");
@@ -29,18 +29,13 @@ themeToggle.addEventListener("click", () => {
   updateThemeIcon(newTheme);
 
   // Re-render chart with new theme
-  if (window.myChart && window.chartData) {
+  if (myChart && window.chartData) {
     renderChart(window.chartData);
   }
 });
 
 function updateThemeIcon(theme) {
   themeIcon.textContent = theme === "dark" ? "☀️" : "🌙";
-}
-
-function getCategoryColor(category, theme) {
-  const color = categoryColors[category] || defaultColor;
-  return color[theme];
 }
 
 // Chart configuration
@@ -70,7 +65,7 @@ function renderChart(data) {
     myChart.dispose();
   }
 
-  // Initialize with dark theme if needed
+  // Initialize with dark theme if needed (原生 ECharts 黑夜模式机制)
   const echartsTheme = theme === "dark" ? "dark" : null;
   myChart = echarts.init(chartDom, echartsTheme);
 
@@ -80,30 +75,8 @@ function renderChart(data) {
   // Sort by value ascending (highest at top for horizontal bar chart)
   const sortedItems = [...items].sort((a, b) => a.value - b.value);
 
-  // Prepare data for ECharts (used primarily for Y-axis here)
-  const chartData = sortedItems.map((item) => {
-    const category = item.category || "";
-    const barColor = item.value >= 0 ? "#FF3B30" : "#34C759";
-    const sign = item.value >= 0 ? "+" : "";
-    return {
-      name: item.name,
-      value: Math.abs(item.value),
-      originalValue: item.value,
-      category: category,
-      itemStyle: {
-        color: barColor,
-      },
-      label: {
-        show: true,
-        position: "right",
-        formatter: sign + item.value.toFixed(2) + "%",
-        color: barColor,
-      },
-    };
-  });
-
-  // Create Y-axis labels
-  const yAxisData = chartData.map((item) => item.name);
+  // Create Y-axis labels directly from sortedItems
+  const yAxisData = sortedItems.map((item) => item.name);
 
   // Get unique categories for legend
   const categories = [
@@ -112,7 +85,7 @@ function renderChart(data) {
 
   // Create one series per category for legend
   const series = categories.map((category) => {
-    const data = sortedItems.map((item) => {
+    const seriesData = sortedItems.map((item) => {
       if (item.category === category) {
         const sign = item.value >= 0 ? "+" : "";
         return {
@@ -142,21 +115,21 @@ function renderChart(data) {
     return {
       name: category,
       type: "bar",
-      stack: "total", // 修复1：加上堆叠属性，避免同一行不同分类并排导致的位置错乱偏移
+      stack: "total",
       barWidth: "60%",
       itemStyle: {
-        color: getCategoryColor(category, theme), // 修复2：设定系列的主颜色，使得图例方块正确继承分类颜色
+        color: categoryColors[category] || defaultColor,
         borderRadius: [0, 8, 8, 0],
       },
-      data: data,
+      data: seriesData,
     };
   });
 
-  const textColor = theme === "dark" ? "#FFFFFF" : "#1D1D1F";
-  const textSecondaryColor = theme === "dark" ? "#98989D" : "#86868B";
   const genTime = new Date(data.generated_at);
 
   const option = {
+    backgroundColor: "transparent",
+    // 基础字体样式可以通过 option 全局定义
     textStyle: {
       fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display"',
     },
@@ -173,13 +146,11 @@ function renderChart(data) {
       show: true,
       type: "scroll",
       top: 70,
-      inactiveColor: textSecondaryColor,
-      // 修复3：ECharts 的 legend.textStyle 不能使用 callback 函数，改为显式给每个项(data)指定颜色
       data: categories.map((category) => {
         return {
           name: category,
           textStyle: {
-            color: getCategoryColor(category, theme),
+            color: categoryColors[category] || defaultColor,
           },
         };
       }),
@@ -212,16 +183,11 @@ function renderChart(data) {
     },
     xAxis: {
       type: "value",
-      axisLine: {
-        lineStyle: { color: textSecondaryColor },
-      },
       axisLabel: {
-        color: textSecondaryColor,
         formatter: "{value}%",
       },
       splitLine: {
         lineStyle: {
-          color: textSecondaryColor + "30",
           type: "dashed",
         },
       },
@@ -229,16 +195,13 @@ function renderChart(data) {
     yAxis: {
       type: "category",
       data: yAxisData,
-      axisLine: {
-        lineStyle: { color: textSecondaryColor },
-      },
       axisLabel: {
         color: function (value, index) {
           const item = sortedItems[index];
           if (item && item.category) {
-            return getCategoryColor(item.category, theme);
+            return categoryColors[item.category] || defaultColor;
           }
-          return textSecondaryColor;
+          return null; // 返回 null 交给 ECharts 默认黑夜/白天主题处理
         },
         fontSize: 13,
       },
@@ -256,10 +219,236 @@ function renderChart(data) {
   });
 }
 
+// Load indices data and render
+async function loadIndicesData() {
+  try {
+    const response = await fetch("./data/indices.json?t=" + Date.now());
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Failed to load indices data:", error);
+    return null;
+  }
+}
+
+// Render global review (适配 Apple Style 布局)
+function renderGlobalReview(data) {
+  const container = document.getElementById("review-content");
+  const subtitle = document.querySelector("#global-review .card-subtitle");
+
+  if (!data || !data.regions) {
+    container.innerHTML = "<div class='loading'>暂无数据</div>";
+    return;
+  }
+
+  // Update subtitle with time
+  if (data.generated_at) {
+    const dt = new Date(data.generated_at);
+    subtitle.textContent = dt.toLocaleString("zh-CN") + " 更新";
+  }
+
+  let html = "";
+  const regions = ["A股", "亚太", "欧股", "美股"];
+
+  regions.forEach((region) => {
+    const indices = data.regions[region];
+    if (!indices || indices.length === 0) return;
+
+    html += `<div class="region-section">
+      <div class="region-title">${region}</div>`;
+
+    indices.forEach((index) => {
+      const isPositive = index.change >= 0;
+      const sign = isPositive ? "+" : "";
+      const changeSign = isPositive ? "+" : "";
+      const changeAmountStr = index.change_amount
+        ? `${changeSign}${index.change_amount}`
+        : "-";
+      const closeStr = index.close ? index.close.toFixed(2) : "-";
+      const changeValueClass = isPositive ? "positive" : "negative";
+
+      const amountHtml = index.amount
+        ? `<div class="data-group"><span class="label">成交</span><span class="value">${index.amount}</span></div>`
+        : "";
+
+      // 替换为极简的一行 Flexbox 布局
+      html += `<div class="index-item">
+        <div class="index-name">${index.name}</div>
+        <div class="index-data">
+          <div class="data-group"><span class="label">涨跌</span><span class="value ${changeValueClass}">${changeAmountStr}</span></div>
+          <div class="data-group"><span class="label">收报</span><span class="value">${closeStr}</span></div>
+          ${amountHtml}
+        </div>
+        <div class="index-change ${changeValueClass}">
+          ${sign}${index.change.toFixed(2)}%
+        </div>
+      </div>`;
+    });
+
+    html += "</div>";
+  });
+
+  container.innerHTML = html;
+}
+
+// Load US stocks data
+async function loadUsStocksData() {
+  try {
+    const response = await fetch("./data/us_stocks.json?t=" + Date.now());
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Failed to load US stocks data:", error);
+    return null;
+  }
+}
+
+// Load China stocks data
+async function loadChinaStocksData() {
+  try {
+    const response = await fetch("./data/china_stocks.json?t=" + Date.now());
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Failed to load China stocks data:", error);
+    return null;
+  }
+}
+
+// Format market cap in Chinese units
+function formatMarketCap(value) {
+  if (value === null || value === undefined) return "-";
+  const val = parseFloat(value);
+  if (val >= 1e8) {
+    return Math.round(val / 1e8) + "亿";
+  } else if (val >= 1e4) {
+    return Math.round(val / 1e4) + "万";
+  } else {
+    return Math.round(val).toString();
+  }
+}
+
+// Render US stocks heatmap
+function renderUsHeatmap(data) {
+  const container = document.getElementById("heatmap-content");
+  const subtitle = document.querySelector("#us-heatmap .card-subtitle");
+
+  if (!data || !data.stocks || data.stocks.length === 0) {
+    container.innerHTML = "<div class='loading'>暂无数据</div>";
+    return;
+  }
+
+  // Update subtitle with time
+  if (data.generated_at) {
+    const dt = new Date(data.generated_at);
+    subtitle.textContent = dt.toLocaleString("zh-CN") + " 更新";
+  }
+
+  let html = '<div class="heatmap-grid">';
+
+  data.stocks.forEach((stock) => {
+    const isPositive = stock.change >= 0;
+    const changeClass = isPositive
+      ? "positive"
+      : stock.change < 0
+        ? "negative"
+        : "neutral";
+    const sign = isPositive ? "+" : "";
+    const changeSign = isPositive ? "+" : "";
+
+    const priceStr =
+      stock.price !== null && stock.price !== undefined
+        ? "$" + stock.price.toFixed(2)
+        : "-";
+    const changeAmountStr =
+      stock.change_amount !== null && stock.change_amount !== undefined
+        ? changeSign + stock.change_amount.toFixed(2)
+        : "-";
+    const changeStr = sign + stock.change.toFixed(2) + "%";
+    const marketCapStr = formatMarketCap(stock.market_cap);
+
+    html += `<div class="heatmap-item ${changeClass}">
+      <div class="stock-name">${stock.name}</div>
+      <div class="stock-market-cap">${marketCapStr}</div>
+      <div class="stock-price">${priceStr}</div>
+      <div class="stock-change">${changeAmountStr} (${changeStr})</div>
+    </div>`;
+  });
+
+  html += "</div>";
+  container.innerHTML = html;
+}
+
+// Render China stocks heatmap
+function renderChinaHeatmap(data) {
+  const container = document.getElementById("china-heatmap-content");
+  const subtitle = document.querySelector("#china-heatmap .card-subtitle");
+
+  if (!data || !data.stocks || data.stocks.length === 0) {
+    container.innerHTML = "<div class='loading'>暂无数据</div>";
+    return;
+  }
+
+  // Update subtitle with time
+  if (data.generated_at) {
+    const dt = new Date(data.generated_at);
+    subtitle.textContent = dt.toLocaleString("zh-CN") + " 更新";
+  }
+
+  let html = '<div class="heatmap-grid">';
+
+  data.stocks.forEach((stock) => {
+    const isPositive = stock.change >= 0;
+    const changeClass = isPositive
+      ? "positive"
+      : stock.change < 0
+        ? "negative"
+        : "neutral";
+    const sign = isPositive ? "+" : "";
+    const changeSign = isPositive ? "+" : "";
+
+    const priceStr =
+      stock.price !== null && stock.price !== undefined
+        ? "$" + stock.price.toFixed(2)
+        : "-";
+    const changeAmountStr =
+      stock.change_amount !== null && stock.change_amount !== undefined
+        ? changeSign + stock.change_amount.toFixed(2)
+        : "-";
+    const changeStr = sign + stock.change.toFixed(2) + "%";
+    const marketCapStr = formatMarketCap(stock.market_cap);
+
+    html += `<div class="heatmap-item ${changeClass}">
+      <div class="stock-name">${stock.name}</div>
+      <div class="stock-market-cap">${marketCapStr}</div>
+      <div class="stock-price">${priceStr}</div>
+      <div class="stock-change">${changeAmountStr} (${changeStr})</div>
+    </div>`;
+  });
+
+  html += "</div>";
+  container.innerHTML = html;
+}
+
 // Initialize
 (async function () {
   const data = await loadData();
   if (data) {
     renderChart(data);
+  }
+
+  const indicesData = await loadIndicesData();
+  if (indicesData) {
+    renderGlobalReview(indicesData);
+  }
+
+  const usStocksData = await loadUsStocksData();
+  if (usStocksData) {
+    renderUsHeatmap(usStocksData);
+  }
+
+  const chinaStocksData = await loadChinaStocksData();
+  if (chinaStocksData) {
+    renderChinaHeatmap(chinaStocksData);
   }
 })();
