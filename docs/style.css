@@ -84,7 +84,7 @@ body {
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
 }
 
@@ -94,6 +94,7 @@ body {
     padding: 30px;
     box-shadow: 0 4px 20px var(--shadow-color);
     transition: all 0.3s ease;
+    min-width: 0;
 }
 
 .card:hover {
@@ -155,6 +156,7 @@ body {
 .heatmap-content {
     flex: 1;
     overflow-y: auto;
+    min-height: 0;
 }
 
 .loading {
@@ -294,7 +296,7 @@ body {
     }
 
     .card-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .title {
@@ -341,7 +343,7 @@ body {
 
 .heatmap-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 8px;
 }
 
@@ -357,6 +359,7 @@ body {
     text-align: center;
     min-height: 100px;
     aspect-ratio: 1;
+    min-width: 0;
 }
 
 .heatmap-item.positive {
@@ -415,7 +418,7 @@ body {
     }
 
     .heatmap-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 6px;
     }
 
@@ -435,25 +438,28 @@ body {
 
 @media (max-width: 600px) {
     .heatmap-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 4px;
     }
 
     .heatmap-item {
-        min-height: 95px;
-        padding: 8px 4px;
+        min-height: 75px;
+        padding: 6px 2px;
     }
 
     .stock-name {
         font-size: 11px;
+        margin-bottom: 2px;
     }
 
     .stock-price {
         font-size: 12px;
+        margin-bottom: 2px;
     }
 
     .stock-change {
         font-size: 10px;
+        margin-bottom: 2px;
     }
 
     .stock-market-cap {
