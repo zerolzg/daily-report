@@ -6,7 +6,9 @@
     --accent-color: #007AFF;
     --shadow-color: rgba(0, 0, 0, 0.08);
     --border-radius: 20px;
-}[data-theme="dark"] {
+}
+
+[data-theme="dark"] {
     --bg-color: #000000;
     --card-bg: #1C1C1E;
     --text-primary: #FFFFFF;
@@ -187,7 +189,6 @@ body {
 
 /* ==================== Apple 风格全球回顾卡片优化 ==================== */
 
-/* 列表项调整为纯净的一行结构 */
 .index-item {
     display: flex;
     justify-content: space-between;
@@ -196,7 +197,7 @@ body {
     margin-bottom: 0;
     background: transparent;
     border: none;
-    border-radius: 6px; /* 悬浮时使用的圆角 */
+    border-radius: 6px;
     border-bottom: 0.5px solid rgba(134, 134, 139, 0.25);
     transition: background-color 0.2s ease;
 }
@@ -205,7 +206,6 @@ body {
     border-bottom: none;
 }
 
-/* 悬浮时消除底边框视觉突兀，给个极浅的背景色 */
 .index-item:hover {
     transform: none;
     box-shadow: none;
@@ -214,13 +214,10 @@ body {
 
 [data-theme="dark"] .index-item {
     border-bottom-color: rgba(152, 152, 157, 0.2);
-}
-
-[data-theme="dark"] .index-item:hover {
+}[data-theme="dark"] .index-item:hover {
     background: rgba(152, 152, 157, 0.15);
 }
 
-/* 指数名称居左 */
 .index-name {
     font-size: 15px;
     font-weight: 600;
@@ -229,17 +226,15 @@ body {
     white-space: nowrap;
 }
 
-/* 中间的数值数据组，向右对齐 */
 .index-data {
     display: flex;
     flex: 1;
     justify-content: flex-end;
     align-items: center;
-    gap: 16px; /* 控制各个数据项之间的间距 */
+    gap: 16px;
     margin: 0 16px;
 }
 
-/* 每个数据块（如：涨跌 -34） */
 .data-group {
     display: flex;
     align-items: baseline;
@@ -247,14 +242,12 @@ body {
     white-space: nowrap;
 }
 
-/* Apple 风格小标签 */
 .data-group .label {
     font-size: 12px;
     color: var(--text-secondary);
     font-weight: 500;
 }
 
-/* 数值应用 tabular-nums 保证数字不会抖动/等宽对齐 */
 .data-group .value {
     font-size: 14px;
     color: var(--text-primary);
@@ -262,11 +255,9 @@ body {
     font-variant-numeric: tabular-nums;
 }
 
-/* 涨跌颜色调整为更护眼的红绿 */
 .data-group .value.positive { color: #FF3B30; }
 .data-group .value.negative { color: #34C759; }
 
-/* 尾部的涨跌幅胶囊 / Apple 风格实色徽章 */
 .index-change {
     font-size: 15px;
     font-weight: 600;
@@ -274,10 +265,9 @@ body {
     padding: 6px 8px;
     border-radius: 6px;
     min-width: 78px;
-    text-align: right; /* 数字靠右对齐 */
+    text-align: right;
 }
 
-/* 取消原来的渐变色，使用苹果原生的扁平实色 */
 .index-change.positive {
     color: #FFFFFF;
     background-color: #FF3B30;
@@ -333,9 +323,9 @@ body {
     }
 }
 
-/* ==================== 美股热力图样式 ==================== */
+/* ==================== 热力图样式 ==================== */
 
-.us-heatmap {
+.us-heatmap, .china-heatmap {
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -360,18 +350,7 @@ body {
     min-height: 100px;
     aspect-ratio: 1;
     min-width: 0;
-}
-
-.heatmap-item.positive {
-    background: linear-gradient(135deg, #FF3B30, #FF6B6B);
-}
-
-.heatmap-item.negative {
-    background: linear-gradient(135deg, #34C759, #30D158);
-}
-
-.heatmap-item.neutral {
-    background: linear-gradient(135deg, #8E8E93, #AEAEB2);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .heatmap-item:hover {
