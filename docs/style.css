@@ -336,7 +336,7 @@ body {
 
 .review-content {
     padding: 12px 20px 20px;
-    max-height: 340px;
+    max-height: 360px;
     overflow-y: auto;
 }
 
@@ -458,6 +458,8 @@ body {
 
 .heatmap-content {
     padding: 16px 20px 20px;
+    max-height: 600px;
+    overflow-y: auto;
 }
 
 .heatmap-grid {

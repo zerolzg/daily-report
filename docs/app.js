@@ -177,8 +177,8 @@ function renderChart(data) {
 
   // Calculate grid left based on screen width
   const isMobile = window.innerWidth < 768;
-  const gridLeft = isMobile ? "22%" : "15%";
-  const gridRight = isMobile ? "5%" : "12%";
+  const gridLeft = isMobile ? "5%" : "10%";
+  const gridRight = isMobile ? "15%" : "20%";
   const yAxisFontSize = isMobile ? 10 : 13;
   const chartTop = isMobile ? "80" : "90";
 
