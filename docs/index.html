@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>财经数据</title>
+    <link rel="icon" href="./favicon.png">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <h1 class="title">财经数据</h1>
+                <span id="lastUpdate" class="last-update">数据更新中...</span>
+            </div>
+            <button id="themeToggle" class="theme-toggle" aria-label="切换主题">
+                <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </header>
+
+        <!-- Market Overview Banner -->
+        <section id="marketBanner" class="market-banner" aria-live="polite">
+            <div class="banner-skeleton">
+                <div class="skeleton-item skeleton-text"></div>
+                <div class="skeleton-item skeleton-text skeleton-short"></div>
+            </div>
+            <div class="banner-content hidden">
+                <div class="banner-title">
+                    <svg class="banner-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                    <span>市场概览</span>
+                </div>
+                <div id="marketStats" class="market-stats"></div>
+            </div>
+        </section>
+
+        <main class="main">
+            <!-- Top Row: Chart + Global Review -->
+            <div class="top-row">
+                <!-- Chart Card -->
+                <article class="card chart-card" aria-label="涨跌排名图表">
+                    <div class="card-header-bar">
+                        <h2 class="card-title-h2">涨跌排名</h2>
+                    </div>
+                    <div class="card-skeleton">
+                        <div class="skeleton-chart"></div>
+                    </div>
+                    <div id="chart" class="chart hidden"></div>
+                </article>
+
+                <!-- Global Review Card -->
+                <article class="card review-card" aria-label="全球走势回顾">
+                    <div class="card-header-bar">
+                        <h2 class="card-title-h2">全球走势回顾</h2>
+                    </div>
+                    <div class="card-skeleton">
+                        <div class="skeleton-list">
+                            <div class="skeleton-item skeleton-row"></div>
+                            <div class="skeleton-item skeleton-row"></div>
+                            <div class="skeleton-item skeleton-row"></div>
+                            <div class="skeleton-item skeleton-row"></div>
+                        </div>
+                    </div>
+                    <div id="review-content" class="review-content hidden"></div>
+                </article>
+            </div>
+
+            <!-- Bottom Row: Heatmaps -->
+            <div class="bottom-row">
+                <!-- US Heatmap Card -->
+                <article id="us-heatmap-card" class="card heatmap-card" aria-label="美股热门股票">
+                    <div class="card-header-bar">
+                        <h2 class="card-title-h2">美股热门</h2>
+                        <div class="sort-controls">
+                            <button class="sort-btn" data-sort="change" aria-pressed="false">按涨跌</button>
+                            <button class="sort-btn active" data-sort="marketCap" aria-pressed="true">按市值</button>
+                        </div>
+                    </div>
+                    <div class="card-skeleton">
+                        <div class="skeleton-grid">
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                        </div>
+                    </div>
+                    <div id="heatmap-content" class="heatmap-content hidden"></div>
+                </article>
+
+                <!-- China Heatmap Card -->
+                <article class="card heatmap-card" aria-label="中概股行情">
+                    <div class="card-header-bar">
+                        <h2 class="card-title-h2">中概股行情</h2>
+                        <div class="sort-controls">
+                            <button class="sort-btn" data-sort="change" aria-pressed="false">按涨跌</button>
+                            <button class="sort-btn active" data-sort="marketCap" aria-pressed="true">按市值</button>
+                        </div>
+                    </div>
+                    <div class="card-skeleton">
+                        <div class="skeleton-grid">
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                            <div class="skeleton-item skeleton-heatmap"></div>
+                        </div>
+                    </div>
+                    <div id="china-heatmap-content" class="heatmap-content hidden"></div>
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/echarts@6.0/dist/echarts.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
