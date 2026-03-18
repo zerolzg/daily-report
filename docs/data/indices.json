@@ -1,44 +1,8 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-18T14:17:44.619327",
+  "generated_at": "2026-03-18T14:58:49.193699",
   "regions": {
-    "A股": [
-      {
-        "name": "上证指数",
-        "change": -0.04,
-        "change_amount": "-2",
-        "close": 4048.11,
-        "amount": "7312.51亿"
-      },
-      {
-        "name": "深证成指",
-        "change": 0.72,
-        "change_amount": "100",
-        "close": 14140.15,
-        "amount": "9715.12亿"
-      },
-      {
-        "name": "创业板指",
-        "change": 1.62,
-        "change_amount": "53",
-        "close": 3333.19,
-        "amount": "4496.47亿"
-      },
-      {
-        "name": "科创50",
-        "change": 1.08,
-        "change_amount": "15",
-        "close": 1368.79,
-        "amount": "527.25亿"
-      },
-      {
-        "name": "沪深300",
-        "change": 0.1,
-        "change_amount": "5",
-        "close": 4642.23,
-        "amount": "4332.15亿"
-      }
-    ],
+    "A股": [],
     "亚太": [],
     "欧股": [],
     "美股": []
