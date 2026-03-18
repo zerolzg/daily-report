@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-18T18:21:04.550990",
+  "generated_at": "2026-03-18T18:28:27.319268",
   "regions": {
     "A股": [
       {
@@ -8,35 +8,35 @@
         "close": 4062.9844,
         "change": 0.3228987488182748,
         "change_amount": "13",
-        "amount": "623.87亿"
+        "amount": "253.48万亿"
       },
       {
         "name": "深证成指",
         "close": 14187.7963,
         "change": 1.054621398247235,
         "change_amount": "148",
-        "amount": "214.51亿"
+        "amount": "304.34万亿"
       },
       {
         "name": "沪深300",
         "close": 4658.3324,
         "change": 0.4505331304397573,
         "change_amount": "21",
-        "amount": "234.69亿"
+        "amount": "109.33万亿"
       },
       {
         "name": "创业板指",
         "close": 3346.3651,
         "change": 2.021494187192797,
         "change_amount": "66",
-        "amount": "28.13亿"
+        "amount": "9.41万亿"
       },
       {
         "name": "科创50",
         "close": 1.445,
         "change": 1.1904761904761993,
         "change_amount": "0",
-        "amount": "21.83亿"
+        "amount": "31.54亿"
       }
     ],
     "亚太": [
@@ -68,21 +68,21 @@
     "欧股": [
       {
         "name": "英国富时100",
-        "close": 10434.27,
-        "change": 0.29480179937713935,
-        "change_amount": "31"
+        "close": 10429.62,
+        "change": 0.25010573263101654,
+        "change_amount": "26"
       },
       {
         "name": "德国DAX",
-        "close": 23926.51,
-        "change": 0.8241989775364805,
-        "change_amount": "196"
+        "close": 23928.14,
+        "change": 0.8310676535085921,
+        "change_amount": "197"
       },
       {
         "name": "法国CAC40",
-        "close": 8055.85,
-        "change": 1.0202533328150212,
-        "change_amount": "81"
+        "close": 8056.19,
+        "change": 1.0245169283552906,
+        "change_amount": "82"
       }
     ],
     "美股": [
@@ -91,21 +91,21 @@
         "close": 46993.27,
         "change": 0.09979461692712362,
         "change_amount": "47",
-        "amount": "4.79亿"
+        "amount": "22.52万亿"
       },
       {
         "name": "纳斯达克",
         "close": 22479.5279,
         "change": 0.4708557379927483,
         "change_amount": "105",
-        "amount": "73.71亿"
+        "amount": "165.70万亿"
       },
       {
         "name": "标普500",
         "close": 6716.08,
         "change": 0.24942643860542169,
         "change_amount": "17",
-        "amount": "28.45亿"
+        "amount": "19.11万亿"
       }
     ]
   }
