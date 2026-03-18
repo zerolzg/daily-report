@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-18T18:09:04.363634",
+  "generated_at": "2026-03-18T18:21:04.550990",
   "regions": {
     "A股": [
       {
@@ -68,21 +68,21 @@
     "欧股": [
       {
         "name": "英国富时100",
-        "close": 10438.53,
-        "change": 0.33574916375101205,
-        "change_amount": "35"
+        "close": 10434.27,
+        "change": 0.29480179937713935,
+        "change_amount": "31"
       },
       {
         "name": "德国DAX",
-        "close": 23913.2,
-        "change": 0.7681118136170131,
-        "change_amount": "182"
+        "close": 23926.51,
+        "change": 0.8241989775364805,
+        "change_amount": "196"
       },
       {
         "name": "法国CAC40",
-        "close": 8053.45,
-        "change": 0.9901573642953975,
-        "change_amount": "79"
+        "close": 8055.85,
+        "change": 1.0202533328150212,
+        "change_amount": "81"
       }
     ],
     "美股": [
