@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-18T19:43:09.499258",
+  "generated_at": "2026-03-19T08:05:17.386460",
   "regions": {
     "A股": [
       {
@@ -49,55 +49,55 @@
       },
       {
         "name": "日经225",
-        "close": 55239.4,
-        "change": 2.86601537345947,
-        "change_amount": "1539.06"
+        "close": 53815.11,
+        "change": -2.578395131011562,
+        "change_amount": "-1424.29"
       },
       {
         "name": "韩国KOSPI",
-        "close": 5925.03,
-        "change": 5.044783422687434,
-        "change_amount": "284.55"
+        "close": 5774.55,
+        "change": -2.539733976030494,
+        "change_amount": "-150.48"
       }
     ],
     "欧股": [
       {
         "name": "英国富时100",
-        "close": 10431.9,
-        "change": 0.2720212234226544,
-        "change_amount": "28.30"
+        "close": 10305.29,
+        "change": -0.9449613595293888,
+        "change_amount": "-98.31"
       },
       {
         "name": "德国DAX",
-        "close": 23871.97,
-        "change": 0.5943722367274548,
-        "change_amount": "141.05"
+        "close": 23502.25,
+        "change": -0.9635951745654964,
+        "change_amount": "-228.67"
       },
       {
         "name": "法国CAC40",
-        "close": 8044.39,
-        "change": 0.8765450831338499,
-        "change_amount": "69.90"
+        "close": 7969.88,
+        "change": -0.057809339531426744,
+        "change_amount": "-4.61"
       }
     ],
     "美股": [
       {
         "name": "道琼斯",
-        "close": 46993.27,
-        "change": 0.09979461692712362,
-        "change_amount": "46.85"
+        "close": 46225.16,
+        "change": -1.634510643758124,
+        "change_amount": "-768.11"
       },
       {
         "name": "纳斯达克",
-        "close": 22479.5279,
-        "change": 0.4708557379927483,
-        "change_amount": "105.35"
+        "close": 22152.4208,
+        "change": -1.455133317101384,
+        "change_amount": "-327.11"
       },
       {
         "name": "标普500",
-        "close": 6716.08,
-        "change": 0.24942643860542169,
-        "change_amount": "16.71"
+        "close": 6624.71,
+        "change": -1.3604662243451522,
+        "change_amount": "-91.37"
       }
     ]
   }
