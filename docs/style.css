@@ -338,6 +338,7 @@ body {
     padding: 12px 20px 20px;
     max-height: 360px;
     overflow-y: auto;
+    overflow-x: auto;
 }
 
 .review-content::-webkit-scrollbar {
@@ -353,6 +354,7 @@ body {
     border-radius: 3px;
 }
 
+/* ===== Global Review Table ===== */
 .region-section {
     margin-bottom: 20px;
 }
@@ -370,75 +372,49 @@ body {
     display: inline-block;
 }
 
-.index-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 4px;
-    border-bottom: 1px solid var(--border-subtle);
-    transition: background-color 150ms ease;
-    border-radius: var(--radius-sm);
+.indices-table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.index-item:last-child {
+.indices-table th {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 6px 4px;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.indices-table td {
+    text-align: center;
+    padding: 10px 4px;
+    border-bottom: 1px solid var(--border-subtle);
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+}
+
+.index-row:last-child td {
     border-bottom: none;
 }
 
-.index-item:hover {
+.index-row:hover td {
     background: var(--bg-secondary);
 }
 
 .index-name {
-    font-size: 14px;
     font-weight: 600;
     color: var(--text-primary);
-    min-width: 80px;
-}
-
-.index-data {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 16px;
-    margin: 0 16px;
-}
-
-.data-group {
-    display: flex;
-    align-items: baseline;
-    gap: 6px;
-}
-
-.data-group .label {
-    font-size: 11px;
-    color: var(--text-tertiary);
-    font-weight: 500;
-}
-
-.data-group .value {
-    font-size: 13px;
-    color: var(--text-primary);
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-}
-
-.data-group .value.positive {
-    color: var(--accent-red);
-}
-
-.data-group .value.negative {
-    color: var(--accent-green);
 }
 
 .index-change {
     font-size: 14px;
     font-weight: 700;
-    font-variant-numeric: tabular-nums;
-    padding: 6px 10px;
+    padding: 4px 10px;
     border-radius: var(--radius-sm);
-    min-width: 72px;
-    text-align: right;
+    display: inline-block;
 }
 
 .index-change.positive {
@@ -449,6 +425,14 @@ body {
 .index-change.negative {
     color: white;
     background: var(--accent-green);
+}
+
+td.positive {
+    color: var(--accent-red);
+}
+
+td.negative {
+    color: var(--accent-green);
 }
 
 /* ===== Heatmap Cards ===== */
@@ -580,15 +564,12 @@ body {
     border-radius: var(--radius-md);
 }
 
-.skeleton-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.skeleton-row {
+.skeleton-bar {
     height: 40px;
     border-radius: var(--radius-sm);
+    background: linear-gradient(90deg, var(--bg-secondary) 25%, var(--border-subtle) 50%, var(--bg-secondary) 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s ease-in-out infinite;
 }
 
 .skeleton-grid {
@@ -648,6 +629,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .review-content {
+        overflow-x: auto;
+    }
+
     .container {
         padding: 16px;
     }

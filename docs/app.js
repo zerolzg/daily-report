@@ -18,8 +18,8 @@ const categoryColors = {
 const defaultColor = "#64748B";
 
 // State
-let usStocksData = null;
-let chinaStocksData = null;
+let _usStocksData = null;
+let _chinaStocksData = null;
 let usStocksSortBy = "marketCap";
 let chinaStocksSortBy = "marketCap";
 
@@ -30,7 +30,7 @@ themeToggle.addEventListener("click", () => {
   body.setAttribute("data-theme", newTheme);
   localStorage.setItem("theme", newTheme);
 
-  // Re-render chart
+  // Re-render chart if data exists
   if (myChart && window.chartData) {
     renderChart(window.chartData);
   }
@@ -39,10 +39,11 @@ themeToggle.addEventListener("click", () => {
 // Chart configuration
 let myChart;
 
-// Fetch data
+// Fetch single data file
 async function fetchData(url) {
   try {
     const response = await fetch(`${url}?t=${Date.now()}`);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return await response.json();
   } catch (error) {
     console.error("Failed to load data from", url, error);
@@ -59,8 +60,8 @@ function formatMarketCap(value) {
   return Math.round(val).toString();
 }
 
-// Get heatmap style with intensity
-function getHeatmapStyle(change, maxChange) {
+// Get heatmap style class
+function getHeatmapStyle(change) {
   if (change === null || change === undefined || change === 0) {
     return "neutral";
   }
@@ -88,7 +89,9 @@ function renderHeatmap(data, contentId, sortBy) {
     return;
   }
 
-  const maxChange = Math.max(...data.stocks.map((s) => Math.abs(s.change || 0)));
+  const maxChange = data.stocks.reduce(
+    (max, s) => Math.max(max, Math.abs(s.change || 0)), 0
+  );
   const scaleMax = Math.min(Math.max(maxChange, 3), 10);
   const sortedStocks = sortStocks(data.stocks, sortBy);
 
@@ -96,7 +99,7 @@ function renderHeatmap(data, contentId, sortBy) {
 
   sortedStocks.forEach((stock) => {
     const isPositive = stock.change >= 0;
-    const changeClass = getHeatmapStyle(stock.change, scaleMax);
+    const changeClass = getHeatmapStyle(stock.change);
     const sign = isPositive ? "+" : "";
 
     const priceStr = stock.price != null ? "$" + stock.price.toFixed(2) : "-";
@@ -130,8 +133,19 @@ function renderChart(data) {
   const echartsTheme = theme === "dark" ? "dark" : null;
   myChart = echarts.init(chartDom, echartsTheme);
 
+  // Guard: ensure data structure is valid
+  if (!data || !data.assets || !data.assets[0] || !data.assets[0].data) {
+    console.warn("Invalid chart data structure");
+    return;
+  }
+
   const assetData = data.assets[0];
   const items = assetData.data;
+
+  if (!items || items.length === 0) {
+    console.warn("No chart items available");
+    return;
+  }
 
   const sortedItems = [...items].sort((a, b) => a.value - b.value);
   const yAxisData = sortedItems.map((item) => item.name);
@@ -172,8 +186,6 @@ function renderChart(data) {
       data: seriesData,
     };
   });
-
-  const genTime = new Date(data.generated_at);
 
   // Calculate grid left based on screen width
   const isMobile = window.innerWidth < 768;
@@ -268,7 +280,17 @@ function renderGlobalReview(data) {
     const indices = data.regions[region];
     if (!indices || indices.length === 0) return;
 
-    html += `<div class="region-section"><div class="region-title">${region}</div>`;
+    html += `<div class="region-section"><div class="region-title">${region}</div>
+    <table class="indices-table">
+      <thead>
+        <tr>
+          <th>指数名称</th>
+          <th>涨跌</th>
+          <th>收报</th>
+          <th>涨跌幅</th>
+        </tr>
+      </thead>
+      <tbody>`;
 
     indices.forEach((index) => {
       const isPositive = index.change >= 0;
@@ -277,25 +299,21 @@ function renderGlobalReview(data) {
       const closeStr = index.close ? index.close.toFixed(2) : "-";
       const changeValueClass = isPositive ? "positive" : "negative";
 
-      const amountHtml = index.amount
-        ? `<div class="data-group"><span class="label">成交</span><span class="value">${index.amount}</span></div>`
-        : "";
-
-      html += `<div class="index-item" tabindex="0">
-        <div class="index-name">${index.name}</div>
-        <div class="index-data">
-          <div class="data-group"><span class="label">涨跌</span><span class="value ${changeValueClass}">${changeAmountStr}</span></div>
-          <div class="data-group"><span class="label">收报</span><span class="value">${closeStr}</span></div>
-          ${amountHtml}
-        </div>
-        <div class="index-change ${changeValueClass}">
-          ${sign}${index.change.toFixed(2)}%
-        </div>
-      </div>`;
+      html += `<tr class="index-row">
+        <td class="index-name">${index.name}</td>
+        <td class="${changeValueClass}">${changeAmountStr}</td>
+        <td>${closeStr}</td>
+        <td><span class="index-change ${changeValueClass}">${sign}${index.change.toFixed(2)}%</span></td>
+      </tr>`;
     });
 
-    html += "</div>";
+    html += `</tbody></table></div>`;
   });
+
+  if (html === "") {
+    container.innerHTML = "<div class='loading'>暂无数据</div>";
+    return;
+  }
 
   container.innerHTML = html;
 }
@@ -307,15 +325,26 @@ function renderMarketBanner(chartData) {
   const statsContainer = document.getElementById("marketStats");
   const lastUpdate = document.getElementById("lastUpdate");
 
-  if (!chartData || !chartData.assets || !chartData.assets[0]) {
+  if (!chartData || !chartData.assets || !chartData.assets[0] || !chartData.assets[0].data) {
     return;
   }
 
   const items = chartData.assets[0].data;
-  const positiveCount = items.filter(i => i.value > 0).length;
-  const negativeCount = items.filter(i => i.value < 0).length;
-  const topGainer = items.reduce((max, item) => item.value > max.value ? item : max, items[0]);
-  const topLoser = items.reduce((min, item) => item.value < min.value ? item : min, items[0]);
+
+  if (!items || items.length === 0) {
+    return;
+  }
+
+  const positiveCount = items.filter((i) => i.value > 0).length;
+  const negativeCount = items.filter((i) => i.value < 0).length;
+  const topGainer = items.reduce(
+    (max, item) => (item.value > max.value ? item : max),
+    items[0]
+  );
+  const topLoser = items.reduce(
+    (min, item) => (item.value < min.value ? item : min),
+    items[0]
+  );
 
   const genTime = new Date(chartData.generated_at);
   lastUpdate.textContent = "最后更新: " + genTime.toLocaleString("zh-CN");
@@ -348,12 +377,14 @@ function setupSortButtons() {
   document.querySelectorAll(".sort-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const section = btn.closest(".heatmap-card");
-      const contentId = section.querySelector("#heatmap-content") ? "heatmap-content" : "china-heatmap-content";
+      const contentId = section.querySelector("#heatmap-content")
+        ? "heatmap-content"
+        : "china-heatmap-content";
       const isUsSection = contentId === "heatmap-content";
-      const data = isUsSection ? usStocksData : chinaStocksData;
+      const data = isUsSection ? _usStocksData : _chinaStocksData;
 
       // Update active state
-      section.querySelectorAll(".sort-btn").forEach(b => {
+      section.querySelectorAll(".sort-btn").forEach((b) => {
         b.classList.remove("active");
         b.setAttribute("aria-pressed", "false");
       });
@@ -401,15 +432,14 @@ function revealContent() {
 (async function () {
   setupSortButtons();
 
-  const [chartData, indicesData, usStocks, chinaStocks] = await Promise.all([
-    fetchData("./data/latest.json"),
-    fetchData("./data/indices.json"),
-    fetchData("./data/us_stocks.json"),
-    fetchData("./data/china_stocks.json"),
-  ]);
+  // Fetch each data file independently to avoid cascading failures
+  const chartData = await fetchData("./data/latest.json");
+  const indicesData = await fetchData("./data/indices.json");
+  const usStocks = await fetchData("./data/us_stocks.json");
+  const chinaStocks = await fetchData("./data/china_stocks.json");
 
-  usStocksData = usStocks;
-  chinaStocksData = chinaStocks;
+  _usStocksData = usStocks;
+  _chinaStocksData = chinaStocks;
 
   if (chartData) {
     renderChart(chartData);
