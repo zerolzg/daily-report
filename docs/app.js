@@ -55,8 +55,8 @@ async function fetchData(url) {
 function formatMarketCap(value) {
   if (value === null || value === undefined) return "-";
   const val = parseFloat(value);
-  if (val >= 1e8) return Math.round(val / 1e8) + "亿";
-  if (val >= 1e4) return Math.round(val / 1e4) + "万";
+  if (val >= 1e8) return (val / 1e8).toFixed(2) + "亿";
+  if (val >= 1e4) return (val / 1e4).toFixed(2) + "万";
   return Math.round(val).toString();
 }
 
@@ -72,7 +72,7 @@ function getHeatmapStyle(change) {
 function sortStocks(stocks, sortBy) {
   return [...stocks].sort((a, b) => {
     if (sortBy === "change") {
-      return (b.change || 0) - (a.change || 0);
+      return ((b.change_percent ?? 0) || 0) - ((a.change_percent ?? 0) || 0);
     } else if (sortBy === "marketCap") {
       return (b.market_cap || 0) - (a.market_cap || 0);
     }
@@ -90,7 +90,7 @@ function renderHeatmap(data, contentId, sortBy) {
   }
 
   const maxChange = data.stocks.reduce(
-    (max, s) => Math.max(max, Math.abs(s.change || 0)), 0
+    (max, s) => Math.max(max, Math.abs(s.change_percent ?? 0)), 0
   );
   const scaleMax = Math.min(Math.max(maxChange, 3), 10);
   const sortedStocks = sortStocks(data.stocks, sortBy);
@@ -98,13 +98,15 @@ function renderHeatmap(data, contentId, sortBy) {
   let html = '<div class="heatmap-grid">';
 
   sortedStocks.forEach((stock) => {
-    const isPositive = stock.change >= 0;
-    const changeClass = getHeatmapStyle(stock.change);
+    const changePercent = stock.change_percent ?? 0;
+    const changeAmount = stock.change ?? 0;
+    const isPositive = changePercent >= 0;
+    const changeClass = getHeatmapStyle(changePercent);
     const sign = isPositive ? "+" : "";
 
     const priceStr = stock.price != null ? "$" + stock.price.toFixed(2) : "-";
-    const changeAmountStr = stock.change_amount != null ? sign + stock.change_amount.toFixed(2) : "-";
-    const changeStr = sign + stock.change.toFixed(2) + "%";
+    const changeAmountStr = stock.change != null ? sign + changeAmount.toFixed(2) : "-";
+    const changeStr = sign + changePercent.toFixed(2) + "%";
     const marketCapStr = formatMarketCap(stock.market_cap);
 
     html += `<div class="heatmap-item ${changeClass}" tabindex="0" role="button" aria-label="${stock.name}: ${changeStr}">
