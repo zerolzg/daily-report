@@ -1,11 +1,11 @@
 {
   "version": "1.0",
-  "generated_at": "2026-03-22T08:05:16.464388",
+  "generated_at": "2026-03-23T08:05:17.220901",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-03-22",
+      "date": "2026-03-23",
       "data": [
         {
           "name": "现货白银",
@@ -43,17 +43,10 @@
           "category": "贵金属"
         },
         {
-          "name": "以太坊",
-          "value": -2.86,
-          "direction": "down",
-          "close": 2084.94,
-          "category": "加密货币"
-        },
-        {
           "name": "比特币",
-          "value": -2.25,
+          "value": -1.55,
           "direction": "down",
-          "close": 68924.09,
+          "close": 67859,
           "category": "加密货币"
         },
         {
@@ -62,6 +55,13 @@
           "direction": "down",
           "close": 6506.67,
           "category": "股指"
+        },
+        {
+          "name": "以太坊",
+          "value": -1.49,
+          "direction": "down",
+          "close": 2053.89,
+          "category": "加密货币"
         },
         {
           "name": "上证指数",
