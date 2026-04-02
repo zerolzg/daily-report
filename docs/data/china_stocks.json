@@ -1,492 +1,492 @@
 {
   "version": "1.0",
-  "generated_at": "2026-04-01T08:05:18.170136",
+  "generated_at": "2026-04-02T08:05:17.404962",
   "stocks": [
     {
       "name": "阿里巴巴",
       "symbol": "BABA",
-      "price": 125.47,
-      "change": 3.49,
-      "change_percent": 2.86,
-      "change_amount": 83.28,
-      "market_cap": 299548685898
+      "price": 123.62,
+      "change": -1.84,
+      "change_percent": -1.47,
+      "change_amount": -44.03,
+      "market_cap": 295131972190
     },
     {
       "name": "拼多多",
       "symbol": "PDD",
-      "price": 102.18,
-      "change": 3.76,
-      "change_percent": 3.82,
-      "change_amount": 53.39,
-      "market_cap": 145059475487
+      "price": 101.78,
+      "change": -0.4,
+      "change_percent": -0.39,
+      "change_amount": -5.66,
+      "market_cap": 144491616902
     },
     {
       "name": "网易",
       "symbol": "NTES",
-      "price": 111.94,
-      "change": 1.91,
-      "change_percent": 1.74,
-      "change_amount": 12.13,
-      "market_cap": 70880215910
+      "price": 112.66,
+      "change": 0.72,
+      "change_percent": 0.64,
+      "change_amount": 4.53,
+      "market_cap": 71336118675
     },
     {
       "name": "京东",
       "symbol": "JD",
-      "price": 29.57,
-      "change": 0.63,
-      "change_percent": 2.18,
-      "change_amount": 8.64,
-      "market_cap": 40540470000
+      "price": 28.87,
+      "change": -0.7,
+      "change_percent": -2.37,
+      "change_amount": -9.61,
+      "market_cap": 39580770000
     },
     {
       "name": "百度",
       "symbol": "BIDU",
-      "price": 111.42,
-      "change": 4.82,
-      "change_percent": 4.52,
-      "change_amount": 16.39,
-      "market_cap": 37910951265
+      "price": 111.9,
+      "change": 0.48,
+      "change_percent": 0.43,
+      "change_amount": 1.63,
+      "market_cap": 38074272542
     },
     {
       "name": "携程网",
       "symbol": "TCOM",
       "price": 49.79,
-      "change": 0.62,
-      "change_percent": 1.26,
-      "change_amount": 4.04,
+      "change": 0,
+      "change_percent": 0.0,
+      "change_amount": 0,
       "market_cap": 32474940675
-    },
-    {
-      "name": "中通快递",
-      "symbol": "ZTO",
-      "price": 25.14,
-      "change": 0.83,
-      "change_percent": 3.41,
-      "change_amount": 6.4,
-      "market_cap": 19355303422
     },
     {
       "name": "理想汽车",
       "symbol": "LI",
-      "price": 17.83,
-      "change": 0.28,
-      "change_percent": 1.6,
-      "change_amount": 3.04,
-      "market_cap": 19271168856
+      "price": 18.38,
+      "change": 0.55,
+      "change_percent": 3.08,
+      "change_amount": 5.95,
+      "market_cap": 19865624429
     },
     {
       "name": "富途控股",
       "symbol": "FUTU",
-      "price": 136.76,
-      "change": 5.39,
-      "change_percent": 4.1,
-      "change_amount": 7.48,
-      "market_cap": 19040753310
+      "price": 140.04,
+      "change": 3.28,
+      "change_percent": 2.4,
+      "change_amount": 4.57,
+      "market_cap": 19497419520
     },
     {
-      "name": "贝壳",
-      "symbol": "BEKE",
-      "price": 14.97,
-      "change": -0.04,
-      "change_percent": -0.23,
-      "change_amount": -0.4,
-      "market_cap": 17461864810
+      "name": "中通快递",
+      "symbol": "ZTO",
+      "price": 24.79,
+      "change": -0.38,
+      "change_percent": -1.51,
+      "change_amount": -2.93,
+      "market_cap": 19085838179
     },
     {
       "name": "百胜中国",
       "symbol": "YUMC",
-      "price": 48.78,
-      "change": 0.43,
-      "change_percent": 0.89,
-      "change_amount": 1.53,
-      "market_cap": 17266883280
+      "price": 49.08,
+      "change": 0.3,
+      "change_percent": 0.62,
+      "change_amount": 1.07,
+      "market_cap": 17373075674
+    },
+    {
+      "name": "贝壳",
+      "symbol": "BEKE",
+      "price": 14.86,
+      "change": -0.12,
+      "change_percent": -0.77,
+      "change_amount": -1.34,
+      "market_cap": 17312137667
     },
     {
       "name": "小鹏汽车",
       "symbol": "XPEV",
-      "price": 17.12,
-      "change": 0.4,
-      "change_percent": 2.39,
-      "change_amount": 3.8,
-      "market_cap": 16338469979
+      "price": 17.5,
+      "change": 0.39,
+      "change_percent": 2.28,
+      "change_amount": 3.72,
+      "market_cap": 16701122935
     },
     {
       "name": "蔚来",
       "symbol": "NIO",
-      "price": 6.02,
-      "change": 0.51,
-      "change_percent": 9.26,
-      "change_amount": 12.63,
-      "market_cap": 14948683369
+      "price": 6.2,
+      "change": 0.17,
+      "change_percent": 2.74,
+      "change_amount": 4.11,
+      "market_cap": 15383238119
     },
     {
       "name": "腾讯音乐",
       "symbol": "TME",
-      "price": 9.28,
-      "change": -0.03,
-      "change_percent": -0.32,
-      "change_amount": -0.46,
-      "market_cap": 14373833797
+      "price": 9.18,
+      "change": -0.1,
+      "change_percent": -1.13,
+      "change_amount": -1.62,
+      "market_cap": 14211198824
     },
     {
       "name": "哔哩哔哩",
       "symbol": "BILI",
-      "price": 22.56,
-      "change": 0.87,
-      "change_percent": 4.01,
-      "change_amount": 3.62,
-      "market_cap": 9356480526
+      "price": 22.89,
+      "change": 0.33,
+      "change_percent": 1.46,
+      "change_amount": 1.37,
+      "market_cap": 9514097454
     },
     {
       "name": "新东方",
       "symbol": "EDU",
-      "price": 56.67,
-      "change": 1.98,
-      "change_percent": 3.62,
-      "change_amount": 3.14,
-      "market_cap": 9018789482
+      "price": 56.9,
+      "change": 0.27,
+      "change_percent": 0.48,
+      "change_amount": 0.43,
+      "market_cap": 9055393004
     },
     {
       "name": "唯品会",
       "symbol": "VIPS",
-      "price": 15.73,
-      "change": -0.27,
-      "change_percent": -1.69,
-      "change_amount": -1.29,
-      "market_cap": 7534670000
+      "price": 15.01,
+      "change": -0.71,
+      "change_percent": -4.52,
+      "change_amount": -3.41,
+      "market_cap": 7189790000
     },
     {
       "name": "好未来",
       "symbol": "TAL2",
-      "price": 11.38,
-      "change": 0.37,
-      "change_percent": 3.36,
-      "change_amount": 2.24,
-      "market_cap": 6942046820
+      "price": 11.21,
+      "change": -0.16,
+      "change_percent": -1.41,
+      "change_amount": -0.97,
+      "market_cap": 6838343133
     },
     {
       "name": "名创优品",
       "symbol": "MNSO",
-      "price": 16.21,
-      "change": 0.86,
-      "change_percent": 5.64,
-      "change_amount": 2.67,
-      "market_cap": 5022192464
+      "price": 16.33,
+      "change": 0.13,
+      "change_percent": 0.8,
+      "change_amount": 0.4,
+      "market_cap": 5057655078
     },
     {
       "name": "金山云",
       "symbol": "KC",
-      "price": 13.36,
-      "change": -0.08,
-      "change_percent": -0.6,
-      "change_amount": -0.24,
-      "market_cap": 3990059884
+      "price": 13.9,
+      "change": 0.54,
+      "change_percent": 4.04,
+      "change_amount": 1.63,
+      "market_cap": 4151334760
     },
     {
       "name": "雾芯科技",
       "symbol": "RLX",
       "price": 2.19,
-      "change": 0.06,
-      "change_percent": 2.57,
-      "change_amount": 0.68,
-      "market_cap": 2674483721
-    },
-    {
-      "name": "微博",
-      "symbol": "WB",
-      "price": 8.75,
-      "change": 0.11,
-      "change_percent": 1.27,
-      "change_amount": 0.26,
-      "market_cap": 2142221200
+      "change": -0.01,
+      "change_percent": -0.45,
+      "change_amount": -0.12,
+      "market_cap": 2668391503
     },
     {
       "name": "再鼎医药",
       "symbol": "ZLAB",
-      "price": 18.81,
-      "change": 0.96,
-      "change_percent": 5.38,
-      "change_amount": 1.07,
-      "market_cap": 2081152300
+      "price": 20.34,
+      "change": 1.53,
+      "change_percent": 8.13,
+      "change_amount": 1.73,
+      "market_cap": 2250432631
+    },
+    {
+      "name": "微博",
+      "symbol": "WB",
+      "price": 8.77,
+      "change": 0.02,
+      "change_percent": 0.23,
+      "change_amount": 0.05,
+      "market_cap": 2147117705
     },
     {
       "name": "汽车之家",
       "symbol": "ATHM",
-      "price": 17.38,
-      "change": 0.28,
-      "change_percent": 1.67,
-      "change_amount": 0.33,
-      "market_cap": 2029760322
+      "price": 17.55,
+      "change": 0.17,
+      "change_percent": 1.01,
+      "change_amount": 0.2,
+      "market_cap": 2049619848
     },
     {
       "name": "陆金所控股",
       "symbol": "LU",
-      "price": 1.88,
-      "change": 0.1,
-      "change_percent": 5.34,
-      "change_amount": 0.81,
-      "market_cap": 1625041672
+      "price": 1.89,
+      "change": 0.01,
+      "change_percent": 0.8,
+      "change_amount": 0.13,
+      "market_cap": 1633708561
     },
     {
       "name": "奇富科技",
       "symbol": "QFIN",
-      "price": 12.91,
-      "change": 0.55,
-      "change_percent": 4.45,
-      "change_amount": 0.68,
-      "market_cap": 1573883274
+      "price": 12.98,
+      "change": 0.07,
+      "change_percent": 0.54,
+      "change_amount": 0.09,
+      "market_cap": 1582417111
     },
     {
       "name": "爱奇艺",
       "symbol": "IQ",
-      "price": 1.35,
-      "change": 0.08,
-      "change_percent": 6.3,
-      "change_amount": 0.77,
-      "market_cap": 1302783392
+      "price": 1.38,
+      "change": 0.03,
+      "change_percent": 2.22,
+      "change_amount": 0.28,
+      "market_cap": 1331734134
     },
     {
       "name": "网易有道",
       "symbol": "DAO",
-      "price": 9.84,
-      "change": -0.03,
-      "change_percent": -0.3,
-      "change_amount": -0.04,
-      "market_cap": 1176561410
+      "price": 9.61,
+      "change": -0.22,
+      "change_percent": -2.24,
+      "change_amount": -0.25,
+      "market_cap": 1149060482
     },
     {
       "name": "老虎证券",
       "symbol": "TIGR",
-      "price": 6.3,
-      "change": 0.22,
-      "change_percent": 3.62,
-      "change_amount": 0.38,
-      "market_cap": 1124683364
+      "price": 6.43,
+      "change": 0.13,
+      "change_percent": 2.06,
+      "change_amount": 0.22,
+      "market_cap": 1147891116
     },
     {
       "name": "挚文集团",
       "symbol": "MOMO",
-      "price": 5.76,
-      "change": 0.06,
-      "change_percent": 1.05,
-      "change_amount": 0.09,
-      "market_cap": 874272833
+      "price": 5.87,
+      "change": 0.1,
+      "change_percent": 1.82,
+      "change_amount": 0.16,
+      "market_cap": 890210098
     },
     {
       "name": "虎牙",
       "symbol": "HUYA",
-      "price": 3.3,
-      "change": 0.28,
-      "change_percent": 9.27,
-      "change_amount": 0.59,
-      "market_cap": 737659876
+      "price": 3.42,
+      "change": 0.12,
+      "change_percent": 3.79,
+      "change_amount": 0.29,
+      "market_cap": 765601538
     },
     {
       "name": "诺亚财富",
       "symbol": "NOAH",
-      "price": 9.9,
-      "change": -0.1,
-      "change_percent": -0.95,
-      "change_amount": -0.06,
-      "market_cap": 648496534
+      "price": 9.95,
+      "change": 0.05,
+      "change_percent": 0.51,
+      "change_amount": 0.04,
+      "market_cap": 651399416
     },
     {
       "name": "优信",
       "symbol": "UXIN",
-      "price": 3.06,
-      "change": 0.06,
-      "change_percent": 2.0,
-      "change_amount": 0.12,
-      "market_cap": 630877865
+      "price": 3,
+      "change": -0.07,
+      "change_percent": -2.28,
+      "change_amount": -0.14,
+      "market_cap": 618507711
     },
     {
       "name": " 高途",
       "symbol": "GOTU",
-      "price": 1.97,
-      "change": 0.02,
-      "change_percent": 1.03,
-      "change_amount": 0.05,
-      "market_cap": 472714793
+      "price": 1.96,
+      "change": 0,
+      "change_percent": 0.0,
+      "change_amount": 0,
+      "market_cap": 470315226
     },
     {
       "name": "搜狐",
       "symbol": "SOHU",
-      "price": 15.45,
-      "change": 0.19,
-      "change_percent": 1.25,
-      "change_amount": 0.05,
-      "market_cap": 402766389
-    },
-    {
-      "name": "乐信",
-      "symbol": "LX",
-      "price": 2.18,
-      "change": 0.11,
-      "change_percent": 5.31,
-      "change_amount": 0.2,
-      "market_cap": 366814432
+      "price": 15.77,
+      "change": 0.32,
+      "change_percent": 2.07,
+      "change_amount": 0.08,
+      "market_cap": 411108476
     },
     {
       "name": "迅雷",
       "symbol": "XNET",
-      "price": 5.56,
-      "change": 0.06,
-      "change_percent": 1.09,
-      "change_amount": 0.03,
-      "market_cap": 349476024
+      "price": 5.93,
+      "change": 0.37,
+      "change_percent": 6.65,
+      "change_amount": 0.25,
+      "market_cap": 372732522
+    },
+    {
+      "name": "乐信",
+      "symbol": "LX",
+      "price": 2.14,
+      "change": -0.04,
+      "change_percent": -1.83,
+      "change_amount": -0.07,
+      "market_cap": 360083892
     },
     {
       "name": "逸仙电商",
       "symbol": "YSG",
-      "price": 3.1,
-      "change": 0.13,
-      "change_percent": 4.38,
-      "change_amount": 0.13,
-      "market_cap": 290971586
+      "price": 3.25,
+      "change": 0.17,
+      "change_percent": 5.52,
+      "change_amount": 0.16,
+      "market_cap": 305050856
     },
     {
       "name": "新氧",
       "symbol": "SY",
-      "price": 2.73,
-      "change": 0.14,
-      "change_percent": 5.41,
-      "change_amount": 0.15,
-      "market_cap": 273601514
+      "price": 2.75,
+      "change": 0.02,
+      "change_percent": 0.73,
+      "change_amount": 0.02,
+      "market_cap": 275605921
     },
     {
       "name": "小牛电动",
       "symbol": "NIU",
-      "price": 2.89,
-      "change": 0.15,
-      "change_percent": 5.47,
-      "change_amount": 0.1,
-      "market_cap": 225315879
-    },
-    {
-      "name": "华米科技",
-      "symbol": "ZEPP",
-      "price": 11.97,
-      "change": 0.98,
-      "change_percent": 8.92,
-      "change_amount": 0.16,
-      "market_cap": 171993937
+      "price": 2.9,
+      "change": 0.01,
+      "change_percent": 0.35,
+      "change_amount": 0.01,
+      "market_cap": 226095518
     },
     {
       "name": "猎豹移动",
       "symbol": "CMCM",
-      "price": 5.46,
-      "change": -0.1,
-      "change_percent": -1.8,
-      "change_amount": -0.04,
-      "market_cap": 167571140
+      "price": 5.57,
+      "change": 0.06,
+      "change_percent": 1.0,
+      "change_amount": 0.02,
+      "market_cap": 170793662
+    },
+    {
+      "name": "华米科技",
+      "symbol": "ZEPP",
+      "price": 11.77,
+      "change": -0.18,
+      "change_percent": -1.51,
+      "change_amount": -0.03,
+      "market_cap": 169120187
     },
     {
       "name": "斗鱼",
       "symbol": "DOYU",
-      "price": 5,
-      "change": 0.32,
-      "change_percent": 6.84,
-      "change_amount": 0.13,
-      "market_cap": 150894295
+      "price": 4.82,
+      "change": -0.2,
+      "change_percent": -3.98,
+      "change_amount": -0.04,
+      "market_cap": 145462100
     },
     {
       "name": "宜人智科",
       "symbol": "YRD",
-      "price": 1.72,
-      "change": 0.12,
-      "change_percent": 7.5,
-      "change_amount": 0.07,
-      "market_cap": 148619152
+      "price": 1.64,
+      "change": -0.09,
+      "change_percent": -4.94,
+      "change_amount": -0.05,
+      "market_cap": 141274601
     },
     {
       "name": "宝尊电商",
       "symbol": "BZUN",
       "price": 2.39,
-      "change": 0.05,
-      "change_percent": 2.14,
-      "change_amount": 0.02,
+      "change": 0,
+      "change_percent": 0.0,
+      "change_amount": 0,
       "market_cap": 138872238
     },
     {
       "name": "途牛",
       "symbol": "TOUR",
-      "price": 0.77,
+      "price": 0.76,
       "change": -0.01,
-      "change_percent": -1.28,
+      "change_percent": -0.91,
       "change_amount": -0.01,
-      "market_cap": 88067585
+      "market_cap": 87209784
     },
     {
       "name": "第九城市",
       "symbol": "NCTY",
-      "price": 5.48,
-      "change": 0.2,
-      "change_percent": 3.79,
-      "change_amount": 0.04,
-      "market_cap": 82886561
+      "price": 5.36,
+      "change": -0.12,
+      "change_percent": -2.19,
+      "change_amount": -0.02,
+      "market_cap": 81071527
     },
     {
       "name": "云米",
       "symbol": "VIOT",
-      "price": 1.11,
-      "change": 0.08,
-      "change_percent": 7.77,
-      "change_amount": 0.07,
-      "market_cap": 74727119
-    },
-    {
-      "name": "玖富",
-      "symbol": "JFU",
-      "price": 3.75,
-      "change": 0.57,
-      "change_percent": 17.92,
-      "change_amount": 0,
-      "market_cap": 44149998
+      "price": 1.13,
+      "change": 0.02,
+      "change_percent": 1.8,
+      "change_amount": 0.02,
+      "market_cap": 76073553
     },
     {
       "name": "房多多",
       "symbol": "DUO",
-      "price": 1.1,
-      "change": 0.03,
-      "change_percent": 2.33,
+      "price": 1.09,
+      "change": -0.01,
+      "change_percent": -0.91,
       "change_amount": 0,
-      "market_cap": 42403254
+      "market_cap": 42017770
+    },
+    {
+      "name": "玖富",
+      "symbol": "JFU",
+      "price": 3.49,
+      "change": -0.41,
+      "change_percent": -10.51,
+      "change_amount": 0,
+      "market_cap": 41088932
     },
     {
       "name": "极光",
       "symbol": "JG",
-      "price": 6.99,
-      "change": -0.01,
-      "change_percent": -0.14,
+      "price": 6.8,
+      "change": -0.19,
+      "change_percent": -2.72,
       "change_amount": 0,
-      "market_cap": 41661147
+      "market_cap": 40528727
     },
     {
       "name": "易电行",
       "symbol": "EZGO",
-      "price": 1.2,
-      "change": -0.02,
-      "change_percent": -1.64,
+      "price": 1.25,
+      "change": -0.01,
+      "change_percent": -0.4,
       "change_amount": 0,
-      "market_cap": 25061694
+      "market_cap": 26105931
     },
     {
       "name": "蘑菇街",
       "symbol": "MOGU",
-      "price": 2.18,
-      "change": -0.05,
-      "change_percent": -2.24,
+      "price": 2.16,
+      "change": -0.07,
+      "change_percent": -3.0,
       "change_amount": 0,
-      "market_cap": 17818537
+      "market_cap": 17677133
     },
     {
       "name": "开心汽车",
       "symbol": "KXIN",
-      "price": 5.44,
-      "change": 0.63,
-      "change_percent": 13.1,
+      "price": 6,
+      "change": 0.56,
+      "change_percent": 10.29,
       "change_amount": 0,
-      "market_cap": 8996470
+      "market_cap": 9922578
     },
     {
       "name": "达达",
