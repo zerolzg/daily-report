@@ -1,11 +1,11 @@
 {
   "version": "1.0",
-  "generated_at": "2026-04-04T08:25:34.030091",
+  "generated_at": "2026-04-05T08:05:16.718617",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-04-04",
+      "date": "2026-04-05",
       "data": [
         {
           "name": "WTI原油",
@@ -16,23 +16,23 @@
         },
         {
           "name": "布伦特原油",
-          "value": 7.78,
+          "value": 7.75,
           "direction": "up",
-          "close": 106.54,
+          "close": 106.51,
           "category": "能源"
         },
         {
           "name": "现货白银",
-          "value": -2.69,
+          "value": -2.74,
           "direction": "down",
-          "close": 73.019,
+          "close": 72.98,
           "category": "贵金属"
         },
         {
           "name": "现货黄金",
-          "value": -1.75,
+          "value": -1.7,
           "direction": "down",
-          "close": 4673.62,
+          "close": 4675.64,
           "category": "贵金属"
         },
         {
@@ -69,6 +69,20 @@
           "direction": "down",
           "close": 799.5,
           "category": "金属"
+        },
+        {
+          "name": "以太坊",
+          "value": 0.57,
+          "direction": "up",
+          "close": 2065.52,
+          "category": "加密货币"
+        },
+        {
+          "name": "比特币",
+          "value": 0.5,
+          "direction": "up",
+          "close": 67300.42,
+          "category": "加密货币"
         },
         {
           "name": "澳元/美元",
@@ -113,13 +127,6 @@
           "category": "货币"
         },
         {
-          "name": "以太坊",
-          "value": -0.16,
-          "direction": "down",
-          "close": 2053.85,
-          "category": "加密货币"
-        },
-        {
           "name": "道琼斯工业指数",
           "value": -0.13,
           "direction": "down",
@@ -132,13 +139,6 @@
           "direction": "up",
           "close": 6582.69,
           "category": "股指"
-        },
-        {
-          "name": "比特币",
-          "value": 0.09,
-          "direction": "up",
-          "close": 66964.29,
-          "category": "加密货币"
         },
         {
           "name": "美元/日元",
