@@ -1,32 +1,46 @@
 {
   "version": "1.0",
-  "generated_at": "2026-04-05T08:05:16.718617",
+  "generated_at": "2026-04-06T08:05:16.930078",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-04-05",
+      "date": "2026-04-06",
       "data": [
         {
           "name": "WTI原油",
-          "value": 13.21,
+          "value": 13.28,
           "direction": "up",
-          "close": 112.21,
+          "close": 112.28,
           "category": "能源"
         },
         {
           "name": "布伦特原油",
-          "value": 7.75,
+          "value": 7.78,
           "direction": "up",
-          "close": 106.51,
+          "close": 106.54,
           "category": "能源"
         },
         {
           "name": "现货白银",
-          "value": -2.74,
+          "value": -2.69,
           "direction": "down",
-          "close": 72.98,
+          "close": 73.019,
           "category": "贵金属"
+        },
+        {
+          "name": "比特币",
+          "value": 2.57,
+          "direction": "up",
+          "close": 69028.95,
+          "category": "加密货币"
+        },
+        {
+          "name": "以太坊",
+          "value": 2.16,
+          "direction": "up",
+          "close": 2110.05,
+          "category": "加密货币"
         },
         {
           "name": "现货黄金",
@@ -69,20 +83,6 @@
           "direction": "down",
           "close": 799.5,
           "category": "金属"
-        },
-        {
-          "name": "以太坊",
-          "value": 0.57,
-          "direction": "up",
-          "close": 2065.52,
-          "category": "加密货币"
-        },
-        {
-          "name": "比特币",
-          "value": 0.5,
-          "direction": "up",
-          "close": 67300.42,
-          "category": "加密货币"
         },
         {
           "name": "澳元/美元",
