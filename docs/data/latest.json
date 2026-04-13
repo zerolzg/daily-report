@@ -1,12 +1,26 @@
 {
   "version": "1.0",
-  "generated_at": "2026-04-12T08:05:16.786582",
+  "generated_at": "2026-04-13T08:05:16.348470",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-04-12",
+      "date": "2026-04-13",
       "data": [
+        {
+          "name": "以太坊",
+          "value": -4.09,
+          "direction": "down",
+          "close": 2191.64,
+          "category": "加密货币"
+        },
+        {
+          "name": "比特币",
+          "value": -3.15,
+          "direction": "down",
+          "close": 70738.76,
+          "category": "加密货币"
+        },
         {
           "name": "WTI原油",
           "value": -2.31,
@@ -34,13 +48,6 @@
           "direction": "up",
           "close": 4061.07,
           "category": "股指"
-        },
-        {
-          "name": "以太坊",
-          "value": 1.78,
-          "direction": "up",
-          "close": 2284.99,
-          "category": "加密货币"
         },
         {
           "name": "日经225指数",
@@ -125,13 +132,6 @@
           "direction": "down",
           "close": 98.667,
           "category": "货币"
-        },
-        {
-          "name": "比特币",
-          "value": 0.11,
-          "direction": "up",
-          "close": 73043.17,
-          "category": "加密货币"
         },
         {
           "name": "标普500指数",
