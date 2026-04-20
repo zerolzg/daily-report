@@ -1,11 +1,11 @@
 {
   "version": "1.0",
-  "generated_at": "2026-04-19T08:05:16.979157",
+  "generated_at": "2026-04-20T08:05:16.129253",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-04-19",
+      "date": "2026-04-20",
       "data": [
         {
           "name": "布伦特原油",
@@ -22,6 +22,13 @@
           "category": "能源"
         },
         {
+          "name": "以太坊",
+          "value": -3.72,
+          "direction": "down",
+          "close": 2262.8,
+          "category": "加密货币"
+        },
+        {
           "name": "现货白银",
           "value": 3.27,
           "direction": "up",
@@ -29,10 +36,10 @@
           "category": "贵金属"
         },
         {
-          "name": "以太坊",
-          "value": -2.84,
+          "name": "比特币",
+          "value": -2.5,
           "direction": "down",
-          "close": 2350.27,
+          "close": 73795.01,
           "category": "加密货币"
         },
         {
@@ -41,13 +48,6 @@
           "direction": "up",
           "close": 49447.43,
           "category": "股指"
-        },
-        {
-          "name": "比特币",
-          "value": -1.79,
-          "direction": "down",
-          "close": 75690.17,
-          "category": "加密货币"
         },
         {
           "name": "标普500指数",
