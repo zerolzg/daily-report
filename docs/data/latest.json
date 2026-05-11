@@ -1,11 +1,11 @@
 {
   "version": "1.0",
-  "generated_at": "2026-05-10T08:05:16.403682",
+  "generated_at": "2026-05-11T08:05:16.363962",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-05-10",
+      "date": "2026-05-11",
       "data": [
         {
           "name": "WTI原油",
@@ -16,17 +16,31 @@
         },
         {
           "name": "布伦特原油",
-          "value": -2.4,
+          "value": -2.44,
           "direction": "down",
-          "close": 98.82,
+          "close": 98.78,
           "category": "能源"
         },
         {
           "name": "现货白银",
-          "value": 2.14,
+          "value": 2.16,
           "direction": "up",
-          "close": 80.304,
+          "close": 80.325,
           "category": "贵金属"
+        },
+        {
+          "name": "以太坊",
+          "value": 1.93,
+          "direction": "up",
+          "close": 2371.34,
+          "category": "加密货币"
+        },
+        {
+          "name": "比特币",
+          "value": 1.9,
+          "direction": "up",
+          "close": 82210.07,
+          "category": "加密货币"
         },
         {
           "name": "沪铜主力",
@@ -34,13 +48,6 @@
           "direction": "up",
           "close": 104550,
           "category": "金属"
-        },
-        {
-          "name": "以太坊",
-          "value": 0.84,
-          "direction": "up",
-          "close": 2326.43,
-          "category": "加密货币"
         },
         {
           "name": "标普500指数",
@@ -58,17 +65,10 @@
         },
         {
           "name": "英镑/美元",
-          "value": 0.62,
+          "value": 0.6,
           "direction": "up",
-          "close": 1.36327,
+          "close": 1.36297,
           "category": "货币"
-        },
-        {
-          "name": "比特币",
-          "value": 0.61,
-          "direction": "up",
-          "close": 80678.4,
-          "category": "加密货币"
         },
         {
           "name": "现货黄金",
@@ -81,7 +81,7 @@
           "name": "澳元/美元",
           "value": 0.57,
           "direction": "up",
-          "close": 0.72462,
+          "close": 0.72466,
           "category": "货币"
         },
         {
@@ -107,9 +107,9 @@
         },
         {
           "name": "美元指数",
-          "value": -0.44,
+          "value": -0.43,
           "direction": "down",
-          "close": 97.836,
+          "close": 97.839,
           "category": "货币"
         },
         {
