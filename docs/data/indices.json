@@ -1,31 +1,31 @@
 {
   "version": "1.0",
-  "generated_at": "2026-05-25T08:05:16.952688",
+  "generated_at": "2026-05-26T08:05:16.662059",
   "regions": {
     "A股": [
       {
         "name": "上证指数",
-        "close": 4112.8996,
-        "change": 0.873698411182067,
-        "change_amount": "35.62"
+        "close": 4152.5686,
+        "change": 0.9645020267453129,
+        "change_amount": "39.67"
       },
       {
         "name": "深证成指",
-        "close": 15597.2969,
-        "change": 2.295667981275747,
-        "change_amount": "350.03"
+        "close": 15856.6102,
+        "change": 1.6625528234959726,
+        "change_amount": "259.31"
       },
       {
         "name": "沪深300",
-        "close": 4845.0956,
-        "change": 1.2961893146399437,
-        "change_amount": "62.00"
+        "close": 4921.5974,
+        "change": 1.5789533647179226,
+        "change_amount": "76.50"
       },
       {
         "name": "创业板指",
-        "close": 3938.502,
-        "change": 2.838895177909236,
-        "change_amount": "108.72"
+        "close": 4021.1602,
+        "change": 2.0987217982877717,
+        "change_amount": "82.66"
       }
     ],
     "亚太": [
@@ -43,15 +43,15 @@
       },
       {
         "name": "日经225",
-        "close": 63912.64,
-        "change": 0.905905301406642,
-        "change_amount": "573.79"
+        "close": 64900.74,
+        "change": -0.3947790270323081,
+        "change_amount": "-257.23"
       },
       {
         "name": "韩国KOSPI",
-        "close": 7847.71,
-        "change": 0.41097345178035044,
-        "change_amount": "32.12"
+        "close": 8057.78,
+        "change": 2.6768318401164124,
+        "change_amount": "210.07"
       }
     ],
     "欧股": [
@@ -63,15 +63,15 @@
       },
       {
         "name": "德国DAX",
-        "close": 24888.56,
-        "change": 1.1451726496407326,
-        "change_amount": "281.79"
+        "close": 25389.1,
+        "change": 2.0111247898632834,
+        "change_amount": "500.54"
       },
       {
         "name": "法国CAC40",
-        "close": 8115.75,
-        "change": 0.3679198614889933,
-        "change_amount": "29.75"
+        "close": 8258.26,
+        "change": 1.7559683331793146,
+        "change_amount": "142.51"
       }
     ],
     "美股": [
