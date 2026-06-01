@@ -1,11 +1,11 @@
 {
   "version": "1.0",
-  "generated_at": "2026-05-31T08:05:15.534241",
+  "generated_at": "2026-06-01T08:05:15.195461",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-05-31",
+      "date": "2026-06-01",
       "data": [
         {
           "name": "日经225指数",
@@ -57,6 +57,13 @@
           "category": "股指"
         },
         {
+          "name": "以太坊",
+          "value": -0.76,
+          "direction": "down",
+          "close": 2007.01,
+          "category": "加密货币"
+        },
+        {
           "name": "上证指数",
           "value": -0.73,
           "direction": "down",
@@ -69,13 +76,6 @@
           "direction": "up",
           "close": 51032.65,
           "category": "股指"
-        },
-        {
-          "name": "比特币",
-          "value": 0.58,
-          "direction": "up",
-          "close": 73884.38,
-          "category": "加密货币"
         },
         {
           "name": "现货白银",
@@ -92,13 +92,6 @@
           "category": "金属"
         },
         {
-          "name": "以太坊",
-          "value": 0.39,
-          "direction": "up",
-          "close": 2022.44,
-          "category": "加密货币"
-        },
-        {
           "name": "铁矿石主力",
           "value": 0.38,
           "direction": "up",
@@ -111,6 +104,13 @@
           "direction": "up",
           "close": 0.71825,
           "category": "货币"
+        },
+        {
+          "name": "比特币",
+          "value": -0.28,
+          "direction": "down",
+          "close": 73674.39,
+          "category": "加密货币"
         },
         {
           "name": "标普500指数",
