@@ -1,32 +1,18 @@
 {
   "version": "1.0",
-  "generated_at": "2026-06-06T08:05:15.616326",
+  "generated_at": "2026-06-07T08:05:15.716121",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-06-06",
+      "date": "2026-06-07",
       "data": [
-        {
-          "name": "以太坊",
-          "value": -10.58,
-          "direction": "down",
-          "close": 1583.4,
-          "category": "加密货币"
-        },
         {
           "name": "现货白银",
           "value": -8.11,
           "direction": "down",
           "close": 67.883,
           "category": "贵金属"
-        },
-        {
-          "name": "比特币",
-          "value": -4.43,
-          "direction": "down",
-          "close": 61056.47,
-          "category": "加密货币"
         },
         {
           "name": "现货黄金",
@@ -92,6 +78,13 @@
           "category": "股指"
         },
         {
+          "name": "以太坊",
+          "value": -0.87,
+          "direction": "down",
+          "close": 1569.69,
+          "category": "加密货币"
+        },
+        {
           "name": "欧元/美元",
           "value": -0.76,
           "direction": "down",
@@ -118,6 +111,13 @@
           "direction": "up",
           "close": 100.072,
           "category": "货币"
+        },
+        {
+          "name": "比特币",
+          "value": -0.28,
+          "direction": "down",
+          "close": 60884.62,
+          "category": "加密货币"
         },
         {
           "name": "螺纹钢主力",
