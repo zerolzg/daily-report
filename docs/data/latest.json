@@ -1,11 +1,11 @@
 {
   "version": "1.0",
-  "generated_at": "2026-06-20T08:05:15.301326",
+  "generated_at": "2026-06-21T08:05:15.346085",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-06-20",
+      "date": "2026-06-21",
       "data": [
         {
           "name": "香港恒生指数",
@@ -13,6 +13,13 @@
           "direction": "down",
           "close": 23815.5,
           "category": "股指"
+        },
+        {
+          "name": "以太坊",
+          "value": 1.75,
+          "direction": "up",
+          "close": 1741.08,
+          "category": "加密货币"
         },
         {
           "name": "WTI原油",
@@ -36,6 +43,13 @@
           "category": "贵金属"
         },
         {
+          "name": "比特币",
+          "value": 1.19,
+          "direction": "up",
+          "close": 64298.01,
+          "category": "加密货币"
+        },
+        {
           "name": "布伦特原油",
           "value": 1.16,
           "direction": "up",
@@ -48,13 +62,6 @@
           "direction": "up",
           "close": 16030.7,
           "category": "股指"
-        },
-        {
-          "name": "比特币",
-          "value": 0.93,
-          "direction": "up",
-          "close": 63543.91,
-          "category": "加密货币"
         },
         {
           "name": "螺纹钢主力",
@@ -139,13 +146,6 @@
           "direction": "up",
           "close": 6.78056,
           "category": "货币"
-        },
-        {
-          "name": "以太坊",
-          "value": 0.0,
-          "direction": "up",
-          "close": 1711.19,
-          "category": "加密货币"
         },
         {
           "name": "标普500指数",
