@@ -1,85 +1,85 @@
 {
   "version": "1.0",
-  "generated_at": "2026-06-23T08:05:15.189270",
+  "generated_at": "2026-06-24T08:05:15.740746",
   "regions": {
     "A股": [
       {
         "name": "上证指数",
-        "close": 4163.0965,
-        "change": 1.7752238593536591,
-        "change_amount": "72.62"
+        "close": 4106.2517,
+        "change": -1.365445168037778,
+        "change_amount": "-56.84"
       },
       {
         "name": "深证成指",
-        "close": 16372.4987,
-        "change": 2.132135520150383,
-        "change_amount": "341.80"
+        "close": 15854.1963,
+        "change": -3.1656890588117776,
+        "change_amount": "-518.30"
       },
       {
         "name": "沪深300",
-        "close": 5059.6582,
-        "change": 2.389097325711554,
-        "change_amount": "118.06"
+        "close": 4919.386,
+        "change": -2.772365137233962,
+        "change_amount": "-140.27"
       },
       {
         "name": "创业板指",
-        "close": 4359.392,
-        "change": 2.516271848329628,
-        "change_amount": "107.00"
+        "close": 4192.1945,
+        "change": -3.8353398822588156,
+        "change_amount": "-167.20"
       }
     ],
     "亚太": [
       {
         "name": "恒生指数",
-        "close": 23768.52,
-        "change": -0.6532549265804027,
-        "change_amount": "-156.29"
+        "close": 23336.28,
+        "change": -1.8185398165304427,
+        "change_amount": "-432.24"
       },
       {
         "name": "恒生科技指数",
-        "close": 4549.41,
-        "change": -1.1932194555149045,
-        "change_amount": "-54.94"
+        "close": 4399.22,
+        "change": -3.3013072024723997,
+        "change_amount": "-150.19"
       },
       {
         "name": "日经225",
-        "close": 72522.43,
-        "change": 0.2331462064020295,
-        "change_amount": "168.69"
+        "close": 69332.12,
+        "change": -0.6537764596341243,
+        "change_amount": "-456.26"
       },
       {
         "name": "韩国KOSPI",
-        "close": 9137.64,
-        "change": 0.2533312121827204,
-        "change_amount": "23.09"
+        "close": 8263.29,
+        "change": 0.7246606467215442,
+        "change_amount": "59.45"
       }
     ],
     "欧股": [
       {
         "name": "英国富时100",
-        "close": 10437.85,
-        "change": 0.7196570194542835,
-        "change_amount": "74.58"
+        "close": 10428.85,
+        "change": -0.0862246535445518,
+        "change_amount": "-9.00"
       },
       {
         "name": "德国DAX",
-        "close": 25139.69,
-        "change": 0.6158292983780359,
-        "change_amount": "153.87"
+        "close": 24893.58,
+        "change": -0.9789699077434804,
+        "change_amount": "-246.11"
       },
       {
         "name": "法国CAC40",
-        "close": 8400.11,
-        "change": -0.2497286590651484,
-        "change_amount": "-21.03"
+        "close": 8340.71,
+        "change": -0.7071335970600559,
+        "change_amount": "-59.40"
       }
     ],
     "美股": [
       {
         "name": "纳斯达克",
-        "close": 26166.6018,
-        "change": -1.3248755896547832,
-        "change_amount": "-351.33"
+        "close": 25587.0391,
+        "change": -2.214894790044913,
+        "change_amount": "-579.56"
       }
     ]
   }
