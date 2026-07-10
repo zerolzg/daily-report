@@ -1,158 +1,158 @@
 {
   "version": "1.0",
-  "generated_at": "2026-07-09T08:05:15.057069",
+  "generated_at": "2026-07-10T08:05:15.462299",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "data": [
         {
           "name": "布伦特原油",
-          "value": 4.16,
-          "direction": "up",
-          "close": 78.95,
+          "value": -3.84,
+          "direction": "down",
+          "close": 75.92,
           "category": "能源"
         },
         {
           "name": "WTI原油",
-          "value": 3.5,
-          "direction": "up",
-          "close": 74.528,
+          "value": -3.83,
+          "direction": "down",
+          "close": 71.675,
           "category": "能源"
         },
         {
-          "name": "香港恒生指数",
-          "value": 3.06,
+          "name": "深证成指",
+          "value": 3.07,
           "direction": "up",
-          "close": 24191.5,
+          "close": 15398.73,
           "category": "股指"
         },
         {
           "name": "现货白银",
-          "value": -2.77,
-          "direction": "down",
-          "close": 58.316,
-          "category": "贵金属"
-        },
-        {
-          "name": "深证成指",
-          "value": -1.87,
-          "direction": "down",
-          "close": 14939.73,
-          "category": "股指"
-        },
-        {
-          "name": "日经225指数",
-          "value": -1.81,
-          "direction": "down",
-          "close": 67341.06,
-          "category": "股指"
-        },
-        {
-          "name": "比特币",
-          "value": -1.69,
-          "direction": "down",
-          "close": 62291.12,
-          "category": "加密货币"
-        },
-        {
-          "name": "以太坊",
-          "value": -1.57,
-          "direction": "down",
-          "close": 1743.54,
-          "category": "加密货币"
-        },
-        {
-          "name": "铁矿石主力",
-          "value": 1.43,
+          "value": 2.8,
           "direction": "up",
-          "close": 746,
-          "category": "金属"
-        },
-        {
-          "name": "道琼斯工业指数",
-          "value": -1.09,
-          "direction": "down",
-          "close": 52348.09,
-          "category": "股指"
-        },
-        {
-          "name": "螺纹钢主力",
-          "value": 0.91,
-          "direction": "up",
-          "close": 3096,
-          "category": "金属"
-        },
-        {
-          "name": "现货黄金",
-          "value": -0.71,
-          "direction": "down",
-          "close": 4077.42,
+          "close": 59.95,
           "category": "贵金属"
         },
         {
           "name": "上证指数",
-          "value": -0.49,
-          "direction": "down",
-          "close": 3970.88,
+          "value": 1.65,
+          "direction": "up",
+          "close": 4036.59,
           "category": "股指"
         },
         {
-          "name": "美元/日元",
-          "value": 0.3,
+          "name": "比特币",
+          "value": 1.51,
           "direction": "up",
-          "close": 162.564,
-          "category": "货币"
+          "close": 63230.01,
+          "category": "加密货币"
+        },
+        {
+          "name": "现货黄金",
+          "value": 1.14,
+          "direction": "up",
+          "close": 4123.93,
+          "category": "贵金属"
+        },
+        {
+          "name": "日经225指数",
+          "value": 1.08,
+          "direction": "up",
+          "close": 68065.5,
+          "category": "股指"
+        },
+        {
+          "name": "香港恒生指数",
+          "value": -0.98,
+          "direction": "down",
+          "close": 23955,
+          "category": "股指"
         },
         {
           "name": "标普500指数",
-          "value": -0.28,
-          "direction": "down",
-          "close": 7482.59,
+          "value": 0.81,
+          "direction": "up",
+          "close": 7543.55,
           "category": "股指"
         },
         {
-          "name": "英镑/美元",
-          "value": 0.21,
-          "direction": "up",
-          "close": 1.33868,
-          "category": "货币"
-        },
-        {
           "name": "沪铜主力",
-          "value": -0.12,
-          "direction": "down",
-          "close": 102850,
+          "value": 0.3,
+          "direction": "up",
+          "close": 103160,
           "category": "金属"
         },
         {
-          "name": "欧元/美元",
-          "value": 0.04,
+          "name": "道琼斯工业指数",
+          "value": 0.27,
           "direction": "up",
-          "close": 1.1416,
+          "close": 52487.44,
+          "category": "股指"
+        },
+        {
+          "name": "澳元/美元",
+          "value": 0.2,
+          "direction": "up",
+          "close": 0.69397,
+          "category": "货币"
+        },
+        {
+          "name": "螺纹钢主力",
+          "value": -0.16,
+          "direction": "down",
+          "close": 3091,
+          "category": "金属"
+        },
+        {
+          "name": "英镑/美元",
+          "value": 0.15,
+          "direction": "up",
+          "close": 1.34073,
           "category": "货币"
         },
         {
           "name": "美元/人民币",
-          "value": 0.04,
-          "direction": "up",
-          "close": 6.80508,
+          "value": -0.15,
+          "direction": "down",
+          "close": 6.79454,
+          "category": "货币"
+        },
+        {
+          "name": "美元/日元",
+          "value": -0.13,
+          "direction": "down",
+          "close": 162.347,
           "category": "货币"
         },
         {
           "name": "美元指数",
-          "value": -0.02,
+          "value": -0.12,
           "direction": "down",
-          "close": 101.062,
+          "close": 100.937,
           "category": "货币"
         },
         {
-          "name": "澳元/美元",
-          "value": -0.01,
-          "direction": "down",
-          "close": 0.69261,
+          "name": "欧元/美元",
+          "value": 0.11,
+          "direction": "up",
+          "close": 1.1429,
           "category": "货币"
+        },
+        {
+          "name": "以太坊",
+          "value": 0.09,
+          "direction": "up",
+          "close": 1745.17,
+          "category": "加密货币"
+        },
+        {
+          "name": "铁矿石主力",
+          "value": -0.07,
+          "direction": "down",
+          "close": 745.5,
+          "category": "金属"
         }
       ]
     }
