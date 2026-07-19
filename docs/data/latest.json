@@ -1,11 +1,11 @@
 {
   "version": "1.0",
-  "generated_at": "2026-07-18T08:05:15.251684",
+  "generated_at": "2026-07-19T08:05:15.328160",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-07-18",
+      "date": "2026-07-19",
       "data": [
         {
           "name": "深证成指",
@@ -50,10 +50,17 @@
           "category": "股指"
         },
         {
+          "name": "比特币",
+          "value": 1.41,
+          "direction": "up",
+          "close": 64834.21,
+          "category": "加密货币"
+        },
+        {
           "name": "以太坊",
-          "value": -1.23,
-          "direction": "down",
-          "close": 1841.8,
+          "value": 1.13,
+          "direction": "up",
+          "close": 1862.61,
           "category": "加密货币"
         },
         {
@@ -104,13 +111,6 @@
           "direction": "down",
           "close": 1.34542,
           "category": "货币"
-        },
-        {
-          "name": "比特币",
-          "value": 0.15,
-          "direction": "up",
-          "close": 63930.8,
-          "category": "加密货币"
         },
         {
           "name": "澳元/美元",
