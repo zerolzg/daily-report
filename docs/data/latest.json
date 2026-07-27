@@ -1,12 +1,19 @@
 {
   "version": "1.0",
-  "generated_at": "2026-07-26T08:05:15.923010",
+  "generated_at": "2026-07-27T08:05:15.754824",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-07-26",
+      "date": "2026-07-27",
       "data": [
+        {
+          "name": "以太坊",
+          "value": 4.26,
+          "direction": "up",
+          "close": 1954.72,
+          "category": "加密货币"
+        },
         {
           "name": "日经225指数",
           "value": -2.89,
@@ -43,6 +50,13 @@
           "category": "股指"
         },
         {
+          "name": "比特币",
+          "value": 1.59,
+          "direction": "up",
+          "close": 65399.99,
+          "category": "加密货币"
+        },
+        {
           "name": "沪铜主力",
           "value": -1.08,
           "direction": "down",
@@ -64,25 +78,11 @@
           "category": "股指"
         },
         {
-          "name": "以太坊",
-          "value": 0.72,
-          "direction": "up",
-          "close": 1874.89,
-          "category": "加密货币"
-        },
-        {
           "name": "道琼斯工业指数",
           "value": 0.45,
           "direction": "up",
           "close": 51946.51,
           "category": "股指"
-        },
-        {
-          "name": "比特币",
-          "value": 0.37,
-          "direction": "up",
-          "close": 64375,
-          "category": "加密货币"
         },
         {
           "name": "螺纹钢主力",
