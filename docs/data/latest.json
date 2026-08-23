@@ -1,11 +1,11 @@
 {
   "version": "1.0",
-  "generated_at": "2026-08-22T08:05:15.559361",
+  "generated_at": "2026-08-23T08:05:15.526396",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-08-22",
+      "date": "2026-08-23",
       "data": [
         {
           "name": "现货黄金",
