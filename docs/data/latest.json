@@ -1,11 +1,11 @@
 {
   "version": "1.0",
-  "generated_at": "2026-09-06T08:05:18.175935",
+  "generated_at": "2026-09-07T08:05:18.032177",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "data": [
         {
           "name": "香港恒生指数",
