@@ -1,143 +1,143 @@
 {
   "version": "1.0",
-  "generated_at": "2026-09-08T08:05:18.149008",
+  "generated_at": "2026-09-09T08:05:18.099228",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "data": [
         {
-          "name": "WTI原油",
-          "value": 4.06,
-          "direction": "up",
-          "close": 92.9,
-          "category": "能源"
-        },
-        {
-          "name": "深证成指",
-          "value": 1.91,
-          "direction": "up",
-          "close": 13774.91,
-          "category": "股指"
-        },
-        {
-          "name": "日经225指数",
-          "value": 1.78,
-          "direction": "up",
-          "close": 66204.99,
-          "category": "股指"
-        },
-        {
           "name": "布伦特原油",
-          "value": 1.34,
+          "value": 1.89,
           "direction": "up",
-          "close": 95.76,
+          "close": 97.57,
           "category": "能源"
-        },
-        {
-          "name": "美元/日元",
-          "value": -1.22,
-          "direction": "down",
-          "close": 154.334,
-          "category": "货币"
         },
         {
           "name": "铁矿石主力",
-          "value": 1.03,
+          "value": 1.36,
           "direction": "up",
-          "close": 734.5,
+          "close": 744.5,
           "category": "金属"
-        },
-        {
-          "name": "香港恒生指数",
-          "value": -0.98,
-          "direction": "down",
-          "close": 25409,
-          "category": "股指"
-        },
-        {
-          "name": "沪铜主力",
-          "value": 0.58,
-          "direction": "up",
-          "close": 109410,
-          "category": "金属"
-        },
-        {
-          "name": "现货黄金",
-          "value": -0.56,
-          "direction": "down",
-          "close": 4406.2,
-          "category": "贵金属"
         },
         {
           "name": "道琼斯工业指数",
-          "value": -0.51,
+          "value": -1.17,
           "direction": "down",
-          "close": 53414.25,
+          "close": 52787.53,
           "category": "股指"
         },
         {
-          "name": "螺纹钢主力",
-          "value": -0.41,
+          "name": "现货黄金",
+          "value": -1.15,
           "direction": "down",
-          "close": 3153,
+          "close": 4355.32,
+          "category": "贵金属"
+        },
+        {
+          "name": "沪铜主力",
+          "value": 1.11,
+          "direction": "up",
+          "close": 110620,
           "category": "金属"
         },
         {
-          "name": "标普500指数",
-          "value": -0.38,
+          "name": "螺纹钢主力",
+          "value": 0.76,
+          "direction": "up",
+          "close": 3177,
+          "category": "金属"
+        },
+        {
+          "name": "WTI原油",
+          "value": -0.74,
           "direction": "down",
-          "close": 7718.36,
-          "category": "股指"
+          "close": 92.216,
+          "category": "能源"
         },
         {
-          "name": "美元指数",
-          "value": -0.26,
+          "name": "日经225指数",
+          "value": -0.61,
           "direction": "down",
-          "close": 98.902,
-          "category": "货币"
-        },
-        {
-          "name": "澳元/美元",
-          "value": 0.18,
-          "direction": "up",
-          "close": 0.72173,
-          "category": "货币"
-        },
-        {
-          "name": "英镑/美元",
-          "value": 0.18,
-          "direction": "up",
-          "close": 1.35391,
-          "category": "货币"
-        },
-        {
-          "name": "欧元/美元",
-          "value": 0.08,
-          "direction": "up",
-          "close": 1.1621,
-          "category": "货币"
-        },
-        {
-          "name": "上证指数",
-          "value": 0.07,
-          "direction": "up",
-          "close": 3932.7,
+          "close": 65801.98,
           "category": "股指"
         },
         {
           "name": "现货白银",
-          "value": -0.07,
+          "value": -0.61,
           "direction": "down",
-          "close": 66.147,
+          "close": 65.745,
           "category": "贵金属"
         },
         {
+          "name": "标普500指数",
+          "value": -0.58,
+          "direction": "down",
+          "close": 7673.65,
+          "category": "股指"
+        },
+        {
+          "name": "深证成指",
+          "value": -0.52,
+          "direction": "down",
+          "close": 13703.21,
+          "category": "股指"
+        },
+        {
+          "name": "香港恒生指数",
+          "value": -0.37,
+          "direction": "down",
+          "close": 25314.5,
+          "category": "股指"
+        },
+        {
+          "name": "美元/日元",
+          "value": -0.24,
+          "direction": "down",
+          "close": 153.958,
+          "category": "货币"
+        },
+        {
+          "name": "上证指数",
+          "value": 0.2,
+          "direction": "up",
+          "close": 3940.55,
+          "category": "股指"
+        },
+        {
+          "name": "美元指数",
+          "value": -0.05,
+          "direction": "down",
+          "close": 98.851,
+          "category": "货币"
+        },
+        {
           "name": "美元/人民币",
+          "value": -0.04,
+          "direction": "down",
+          "close": 6.70535,
+          "category": "货币"
+        },
+        {
+          "name": "欧元/美元",
           "value": 0.02,
           "direction": "up",
-          "close": 6.70789,
+          "close": 1.1623,
+          "category": "货币"
+        },
+        {
+          "name": "澳元/美元",
+          "value": -0.02,
+          "direction": "down",
+          "close": 0.72155,
+          "category": "货币"
+        },
+        {
+          "name": "英镑/美元",
+          "value": 0.01,
+          "direction": "up",
+          "close": 1.354,
           "category": "货币"
         }
       ]
