@@ -1,0 +1,1534 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-09-11T10:07:40.173169",
+  "dates": [
+    "2026-09-11"
+  ],
+  "indices": {
+    "上证指数": {
+      "region": "A股",
+      "close": [
+        3874.3528
+      ],
+      "change_percent": [
+        -1.5262999454351855
+      ]
+    },
+    "深证成指": {
+      "region": "A股",
+      "close": [
+        13381.7367
+      ],
+      "change_percent": [
+        -1.7325511887503704
+      ]
+    },
+    "沪深300": {
+      "region": "A股",
+      "close": [
+        4488.9035
+      ],
+      "change_percent": [
+        -1.3078540454030474
+      ]
+    },
+    "创业板指": {
+      "region": "A股",
+      "close": [
+        3298.1753
+      ],
+      "change_percent": [
+        -1.20557242846202
+      ]
+    },
+    "恒生指数": {
+      "region": "亚太",
+      "close": [
+        24677.27
+      ],
+      "change_percent": [
+        -1.1108230309038851
+      ]
+    },
+    "恒生科技指数": {
+      "region": "亚太",
+      "close": [
+        4279.84
+      ],
+      "change_percent": [
+        -1.1696136003085018
+      ]
+    },
+    "日经225": {
+      "region": "亚太",
+      "close": [
+        63448.26
+      ],
+      "change_percent": [
+        -2.792393790308933
+      ]
+    },
+    "韩国KOSPI": {
+      "region": "亚太",
+      "close": [
+        6862.58
+      ],
+      "change_percent": [
+        -2.4359105591192414
+      ]
+    },
+    "英国富时100": {
+      "region": "欧股",
+      "close": [
+        10608.92
+      ],
+      "change_percent": [
+        -0.573005212716699
+      ]
+    },
+    "德国DAX": {
+      "region": "欧股",
+      "close": [
+        25361.15
+      ],
+      "change_percent": [
+        -0.8417900060407104
+      ]
+    },
+    "法国CAC40": {
+      "region": "欧股",
+      "close": [
+        8116.76
+      ],
+      "change_percent": [
+        -0.48929281189504853
+      ]
+    },
+    "道琼斯": {
+      "region": "美股",
+      "close": [
+        52064.1
+      ],
+      "change_percent": [
+        -0.6043451915268058
+      ]
+    },
+    "纳斯达克": {
+      "region": "美股",
+      "close": [
+        26081.7245
+      ],
+      "change_percent": [
+        -0.6536894022146519
+      ]
+    },
+    "标普500": {
+      "region": "美股",
+      "close": [
+        7591.7
+      ],
+      "change_percent": [
+        -0.5848336118255275
+      ]
+    }
+  },
+  "us_stocks": [
+    {
+      "symbol": "NVDA",
+      "name": "英伟达",
+      "market_cap": 5263440000000,
+      "cum_change": {
+        "7": -2.25,
+        "30": -2.25
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "name": "苹果",
+      "market_cap": 4767042955200,
+      "cum_change": {
+        "7": 3.58,
+        "30": 3.58
+      }
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "谷歌-A",
+      "market_cap": 4068554100000,
+      "cum_change": {
+        "7": 0.61,
+        "30": 0.61
+      }
+    },
+    {
+      "symbol": "GOOG",
+      "name": "谷歌-C",
+      "market_cap": 4042259600000,
+      "cum_change": {
+        "7": 0.65,
+        "30": 0.65
+      }
+    },
+    {
+      "symbol": "MSFT",
+      "name": "微软",
+      "market_cap": 3657006898863,
+      "cum_change": {
+        "7": 0.17,
+        "30": 0.17
+      }
+    },
+    {
+      "symbol": "AMZN",
+      "name": "亚马逊",
+      "market_cap": 2716964525651,
+      "cum_change": {
+        "7": -0.2,
+        "30": -0.2
+      }
+    },
+    {
+      "symbol": "TSM",
+      "name": "台积电",
+      "market_cap": 2221263084720,
+      "cum_change": {
+        "7": -1.63,
+        "30": -1.63
+      }
+    },
+    {
+      "symbol": "SPCX",
+      "name": "SpaceX",
+      "market_cap": 1954067059047,
+      "cum_change": {
+        "7": 0.47,
+        "30": 0.47
+      }
+    },
+    {
+      "symbol": "AVGO",
+      "name": "博通",
+      "market_cap": 1721609610812,
+      "cum_change": {
+        "7": -1.02,
+        "30": -1.02
+      }
+    },
+    {
+      "symbol": "META",
+      "name": "Meta Platforms Inc-A",
+      "market_cap": 1641536586203,
+      "cum_change": {
+        "7": -1.43,
+        "30": -1.43
+      }
+    },
+    {
+      "symbol": "TSLA",
+      "name": "特斯拉",
+      "market_cap": 1436094927932,
+      "cum_change": {
+        "7": -1.14,
+        "30": -1.14
+      }
+    },
+    {
+      "symbol": "MU",
+      "name": "美光科技",
+      "market_cap": 1106805287980,
+      "cum_change": {
+        "7": -4.65,
+        "30": -4.65
+      }
+    },
+    {
+      "symbol": "LLY",
+      "name": "礼来",
+      "market_cap": 1057398150403,
+      "cum_change": {
+        "7": -0.08,
+        "30": -0.08
+      }
+    },
+    {
+      "symbol": "JPM",
+      "name": "摩根大通",
+      "market_cap": 939642238071,
+      "cum_change": {
+        "7": -0.34,
+        "30": -0.34
+      }
+    },
+    {
+      "symbol": "WMT",
+      "name": "沃尔玛",
+      "market_cap": 839073002448,
+      "cum_change": {
+        "7": -0.07,
+        "30": -0.07
+      }
+    },
+    {
+      "symbol": "AMD",
+      "name": "超威半导体",
+      "market_cap": 821902209396,
+      "cum_change": {
+        "7": -3.38,
+        "30": -3.38
+      }
+    },
+    {
+      "symbol": "XOM",
+      "name": "埃克森美孚",
+      "market_cap": 679452332270,
+      "cum_change": {
+        "7": 0.61,
+        "30": 0.61
+      }
+    },
+    {
+      "symbol": "V",
+      "name": "维萨",
+      "market_cap": 655349223397,
+      "cum_change": {
+        "7": -0.04,
+        "30": -0.04
+      }
+    },
+    {
+      "symbol": "ASML",
+      "name": "阿斯麦",
+      "market_cap": 648145704000,
+      "cum_change": {
+        "7": -2.43,
+        "30": -2.43
+      }
+    },
+    {
+      "symbol": "JNJ",
+      "name": "强生",
+      "market_cap": 641852392325,
+      "cum_change": {
+        "7": -0.28,
+        "30": -0.28
+      }
+    },
+    {
+      "symbol": "INTC",
+      "name": "英特尔",
+      "market_cap": 526820033758,
+      "cum_change": {
+        "7": -5.61,
+        "30": -5.61
+      }
+    },
+    {
+      "symbol": "MA",
+      "name": "万事达",
+      "market_cap": 495317920325,
+      "cum_change": {
+        "7": -0.37,
+        "30": -0.37
+      }
+    },
+    {
+      "symbol": "ORCL",
+      "name": "甲骨文",
+      "market_cap": 440999822053,
+      "cum_change": {
+        "7": -5.28,
+        "30": -5.28
+      }
+    },
+    {
+      "symbol": "BAC",
+      "name": "美国银行",
+      "market_cap": 437536265198,
+      "cum_change": {
+        "7": -0.16,
+        "30": -0.16
+      }
+    },
+    {
+      "symbol": "CSCO",
+      "name": "思科",
+      "market_cap": 423630959504,
+      "cum_change": {
+        "7": -1.81,
+        "30": -1.81
+      }
+    },
+    {
+      "symbol": "CVX",
+      "name": "雪佛龙",
+      "market_cap": 420370825993,
+      "cum_change": {
+        "7": -0.49,
+        "30": -0.49
+      }
+    },
+    {
+      "symbol": "KO",
+      "name": "可口可乐",
+      "market_cap": 377892900013,
+      "cum_change": {
+        "7": 0.32,
+        "30": 0.32
+      }
+    },
+    {
+      "symbol": "CAT",
+      "name": "卡特彼勒",
+      "market_cap": 370038285645,
+      "cum_change": {
+        "7": -1.29,
+        "30": -1.29
+      }
+    },
+    {
+      "symbol": "UNH",
+      "name": "联合健康",
+      "market_cap": 348598910729,
+      "cum_change": {
+        "7": -1.19,
+        "30": -1.19
+      }
+    },
+    {
+      "symbol": "GE",
+      "name": "GE航空航天",
+      "market_cap": 336294761714,
+      "cum_change": {
+        "7": -0.4,
+        "30": -0.4
+      }
+    },
+    {
+      "symbol": "MS",
+      "name": "摩根士丹利",
+      "market_cap": 334075155971,
+      "cum_change": {
+        "7": -1.23,
+        "30": -1.23
+      }
+    },
+    {
+      "symbol": "PG",
+      "name": "宝洁",
+      "market_cap": 332142140616,
+      "cum_change": {
+        "7": 0.25,
+        "30": 0.25
+      }
+    },
+    {
+      "symbol": "DELL",
+      "name": "戴尔科技",
+      "market_cap": 322001009110,
+      "cum_change": {
+        "7": -5.38,
+        "30": -5.38
+      }
+    },
+    {
+      "symbol": "NFLX",
+      "name": "奈飞",
+      "market_cap": 316625972963,
+      "cum_change": {
+        "7": 0.01,
+        "30": 0.01
+      }
+    },
+    {
+      "symbol": "HD",
+      "name": "家得宝",
+      "market_cap": 304993718668,
+      "cum_change": {
+        "7": -1.53,
+        "30": -1.53
+      }
+    },
+    {
+      "symbol": "GS",
+      "name": "高盛",
+      "market_cap": 296917675737,
+      "cum_change": {
+        "7": -0.88,
+        "30": -0.88
+      }
+    },
+    {
+      "symbol": "RY",
+      "name": "加拿大皇家银行",
+      "market_cap": 285144083551,
+      "cum_change": {
+        "7": -0.41,
+        "30": -0.41
+      }
+    },
+    {
+      "symbol": "WFC",
+      "name": "富国银行",
+      "market_cap": 270479806209,
+      "cum_change": {
+        "7": -0.25,
+        "30": -0.25
+      }
+    },
+    {
+      "symbol": "C",
+      "name": "花旗集团",
+      "market_cap": 232375317549,
+      "cum_change": {
+        "7": 0.53,
+        "30": 0.53
+      }
+    },
+    {
+      "symbol": "TM",
+      "name": "丰田汽车(ADR)",
+      "market_cap": 227848721452,
+      "cum_change": {
+        "7": 0.75,
+        "30": 0.75
+      }
+    },
+    {
+      "symbol": "IBM",
+      "name": "IBM国际商业机器",
+      "market_cap": 220525396667,
+      "cum_change": {
+        "7": -2.45,
+        "30": -2.45
+      }
+    },
+    {
+      "symbol": "AXP",
+      "name": "美国运通",
+      "market_cap": 216592122738,
+      "cum_change": {
+        "7": -0.33,
+        "30": -0.33
+      }
+    },
+    {
+      "symbol": "VZ",
+      "name": "威瑞森通讯(Verizon)",
+      "market_cap": 207572569092,
+      "cum_change": {
+        "7": 0.44,
+        "30": 0.44
+      }
+    },
+    {
+      "symbol": "TTE",
+      "name": "TotalEnergies SE",
+      "market_cap": 202879369352,
+      "cum_change": {
+        "7": -0.46,
+        "30": -0.46
+      }
+    },
+    {
+      "symbol": "CRM",
+      "name": "赛富时",
+      "market_cap": 200067185000,
+      "cum_change": {
+        "7": -0.44,
+        "30": -0.44
+      }
+    },
+    {
+      "symbol": "TMUS",
+      "name": "T-Mobile US Inc",
+      "market_cap": 189948689230,
+      "cum_change": {
+        "7": -0.15,
+        "30": -0.15
+      }
+    },
+    {
+      "symbol": "PEP",
+      "name": "百事",
+      "market_cap": 186498782485,
+      "cum_change": {
+        "7": -0.04,
+        "30": -0.04
+      }
+    },
+    {
+      "symbol": "QCOM",
+      "name": "高通",
+      "market_cap": 185734500000,
+      "cum_change": {
+        "7": 0.28,
+        "30": 0.28
+      }
+    },
+    {
+      "symbol": "DIS",
+      "name": "迪士尼",
+      "market_cap": 182769808577,
+      "cum_change": {
+        "7": 1.6,
+        "30": 1.6
+      }
+    },
+    {
+      "symbol": "MCD",
+      "name": "麦当劳",
+      "market_cap": 179050998381,
+      "cum_change": {
+        "7": -0.18,
+        "30": -0.18
+      }
+    },
+    {
+      "symbol": "T",
+      "name": "美国电话电报(AT&T)",
+      "market_cap": 175146977214,
+      "cum_change": {
+        "7": 1.63,
+        "30": 1.63
+      }
+    },
+    {
+      "symbol": "WDC",
+      "name": "西部数据",
+      "market_cap": 166270667144,
+      "cum_change": {
+        "7": -4.38,
+        "30": -4.38
+      }
+    },
+    {
+      "symbol": "UBS",
+      "name": "瑞银集团",
+      "market_cap": 165303458625,
+      "cum_change": {
+        "7": -1.55,
+        "30": -1.55
+      }
+    },
+    {
+      "symbol": "COP",
+      "name": "康菲石油",
+      "market_cap": 164643301497,
+      "cum_change": {
+        "7": 0.38,
+        "30": 0.38
+      }
+    },
+    {
+      "symbol": "BLK",
+      "name": "贝莱德",
+      "market_cap": 164554782458,
+      "cum_change": {
+        "7": -0.89,
+        "30": -0.89
+      }
+    },
+    {
+      "symbol": "BA",
+      "name": "波音",
+      "market_cap": 161907298597,
+      "cum_change": {
+        "7": -0.76,
+        "30": -0.76
+      }
+    },
+    {
+      "symbol": "PFE",
+      "name": "辉瑞",
+      "market_cap": 157567476368,
+      "cum_change": {
+        "7": -0.49,
+        "30": -0.49
+      }
+    },
+    {
+      "symbol": "UBER",
+      "name": "优步",
+      "market_cap": 148208162380,
+      "cum_change": {
+        "7": 2.08,
+        "30": 2.08
+      }
+    },
+    {
+      "symbol": "SONY",
+      "name": "索尼",
+      "market_cap": 137710783209,
+      "cum_change": {
+        "7": 0.36,
+        "30": 0.36
+      }
+    },
+    {
+      "symbol": "NEM",
+      "name": "纽蒙特",
+      "market_cap": 132923279987,
+      "cum_change": {
+        "7": -1.99,
+        "30": -1.99
+      }
+    },
+    {
+      "symbol": "RIO",
+      "name": "力拓",
+      "market_cap": 124743412211,
+      "cum_change": {
+        "7": -4.2,
+        "30": -4.2
+      }
+    },
+    {
+      "symbol": "LMT",
+      "name": "洛克希德马丁",
+      "market_cap": 122314483275,
+      "cum_change": {
+        "7": 1.05,
+        "30": 1.05
+      }
+    },
+    {
+      "symbol": "BP",
+      "name": "英国石油",
+      "market_cap": 120610903565,
+      "cum_change": {
+        "7": 0.88,
+        "30": 0.88
+      }
+    },
+    {
+      "symbol": "SBUX",
+      "name": "星巴克",
+      "market_cap": 113099400000,
+      "cum_change": {
+        "7": -0.83,
+        "30": -0.83
+      }
+    },
+    {
+      "symbol": "VLO",
+      "name": "瓦莱罗能源",
+      "market_cap": 111007553314,
+      "cum_change": {
+        "7": -0.88,
+        "30": -0.88
+      }
+    },
+    {
+      "symbol": "PSX",
+      "name": "Phillips 66",
+      "market_cap": 103182818668,
+      "cum_change": {
+        "7": -0.84,
+        "30": -0.84
+      }
+    },
+    {
+      "symbol": "ADBE",
+      "name": "奥多比",
+      "market_cap": 98719125000,
+      "cum_change": {
+        "7": -2.55,
+        "30": -2.55
+      }
+    },
+    {
+      "symbol": "RACE",
+      "name": "法拉利",
+      "market_cap": 94937709870,
+      "cum_change": {
+        "7": 1.52,
+        "30": 1.52
+      }
+    },
+    {
+      "symbol": "BX",
+      "name": "黑石集团",
+      "market_cap": 94180933054,
+      "cum_change": {
+        "7": -2.79,
+        "30": -2.79
+      }
+    },
+    {
+      "symbol": "CMCSA",
+      "name": "康卡斯特",
+      "market_cap": 89283696177,
+      "cum_change": {
+        "7": 2.32,
+        "30": 2.32
+      }
+    },
+    {
+      "symbol": "BCS",
+      "name": "巴克莱",
+      "market_cap": 88169510521,
+      "cum_change": {
+        "7": -0.87,
+        "30": -0.87
+      }
+    },
+    {
+      "symbol": "SLB",
+      "name": "斯伦贝谢",
+      "market_cap": 83112020936,
+      "cum_change": {
+        "7": -1.84,
+        "30": -1.84
+      }
+    },
+    {
+      "symbol": "MCO",
+      "name": "穆迪",
+      "market_cap": 80940462397,
+      "cum_change": {
+        "7": -1.52,
+        "30": -1.52
+      }
+    },
+    {
+      "symbol": "DB",
+      "name": "德意志银行",
+      "market_cap": 75836440000,
+      "cum_change": {
+        "7": -0.74,
+        "30": -0.74
+      }
+    },
+    {
+      "symbol": "GM",
+      "name": "通用汽车",
+      "market_cap": 75548577680,
+      "cum_change": {
+        "7": 2.79,
+        "30": 2.79
+      }
+    },
+    {
+      "symbol": "TGT",
+      "name": "塔吉特",
+      "market_cap": 70761259599,
+      "cum_change": {
+        "7": -1.12,
+        "30": -1.12
+      }
+    },
+    {
+      "symbol": "CL",
+      "name": "高露洁",
+      "market_cap": 70063519941,
+      "cum_change": {
+        "7": -0.16,
+        "30": -0.16
+      }
+    },
+    {
+      "symbol": "VALE",
+      "name": "淡水河谷",
+      "market_cap": 65028480901,
+      "cum_change": {
+        "7": -1.04,
+        "30": -1.04
+      }
+    },
+    {
+      "symbol": "NOK",
+      "name": "诺基亚",
+      "market_cap": 60925163175,
+      "cum_change": {
+        "7": -1.39,
+        "30": -1.39
+      }
+    },
+    {
+      "symbol": "NUE",
+      "name": "纽柯钢铁",
+      "market_cap": 57966735218,
+      "cum_change": {
+        "7": -0.93,
+        "30": -0.93
+      }
+    },
+    {
+      "symbol": "NXPI",
+      "name": "恩智浦半导体",
+      "market_cap": 57127793620,
+      "cum_change": {
+        "7": 1.45,
+        "30": 1.45
+      }
+    },
+    {
+      "symbol": "F",
+      "name": "福特汽车",
+      "market_cap": 55467455728,
+      "cum_change": {
+        "7": 3.42,
+        "30": 3.42
+      }
+    },
+    {
+      "symbol": "NKE",
+      "name": "耐克",
+      "market_cap": 54310887517,
+      "cum_change": {
+        "7": -1.98,
+        "30": -1.98
+      }
+    },
+    {
+      "symbol": "DAL",
+      "name": "达美航空",
+      "market_cap": 51449137752,
+      "cum_change": {
+        "7": -0.65,
+        "30": -0.65
+      }
+    },
+    {
+      "symbol": "EBAY",
+      "name": "易趣",
+      "market_cap": 46742800000,
+      "cum_change": {
+        "7": 1.48,
+        "30": 1.48
+      }
+    },
+    {
+      "symbol": "PYPL",
+      "name": "PayPal Holdings Inc",
+      "market_cap": 45604619193,
+      "cum_change": {
+        "7": 2.19,
+        "30": 2.19
+      }
+    },
+    {
+      "symbol": "TRI",
+      "name": "汤森路透",
+      "market_cap": 41463924360,
+      "cum_change": {
+        "7": -1.31,
+        "30": -1.31
+      }
+    },
+    {
+      "symbol": "HMC",
+      "name": "本田汽车",
+      "market_cap": 41025906424,
+      "cum_change": {
+        "7": 1.01,
+        "30": 1.01
+      }
+    },
+    {
+      "symbol": "VOD",
+      "name": "沃达丰",
+      "market_cap": 40072037236,
+      "cum_change": {
+        "7": 1.08,
+        "30": 1.08
+      }
+    },
+    {
+      "symbol": "YUM",
+      "name": "Yum! Brands Inc",
+      "market_cap": 39256821077,
+      "cum_change": {
+        "7": -0.9,
+        "30": -0.9
+      }
+    },
+    {
+      "symbol": "AIG",
+      "name": "美国国际集团",
+      "market_cap": 39227445538,
+      "cum_change": {
+        "7": -0.01,
+        "30": -0.01
+      }
+    },
+    {
+      "symbol": "ERIC",
+      "name": "爱立信",
+      "market_cap": 32673159005,
+      "cum_change": {
+        "7": -0.55,
+        "30": -0.55
+      }
+    },
+    {
+      "symbol": "HAL",
+      "name": "哈里伯顿",
+      "market_cap": 30042681034,
+      "cum_change": {
+        "7": -2.88,
+        "30": -2.88
+      }
+    },
+    {
+      "symbol": "HPQ",
+      "name": "惠普",
+      "market_cap": 29524636325,
+      "cum_change": {
+        "7": 1.08,
+        "30": 1.08
+      }
+    },
+    {
+      "symbol": "FOXA",
+      "name": "福克斯-A",
+      "market_cap": 27408319060,
+      "cum_change": {
+        "7": 2.08,
+        "30": 2.08
+      }
+    },
+    {
+      "symbol": "FOX",
+      "name": "福克斯-B",
+      "market_cap": 24402191107,
+      "cum_change": {
+        "7": 1.65,
+        "30": 1.65
+      }
+    },
+    {
+      "symbol": "DOW",
+      "name": "陶氏",
+      "market_cap": 21417402081,
+      "cum_change": {
+        "7": 0.85,
+        "30": 0.85
+      }
+    },
+    {
+      "symbol": "WMG",
+      "name": "华纳音乐",
+      "market_cap": 14573838164,
+      "cum_change": {
+        "7": -1.07,
+        "30": -1.07
+      }
+    },
+    {
+      "symbol": "PINS",
+      "name": "Pinterest Inc-A",
+      "market_cap": 10635358647,
+      "cum_change": {
+        "7": 2.74,
+        "30": 2.74
+      }
+    },
+    {
+      "symbol": "DBX",
+      "name": "Dropbox Inc-A",
+      "market_cap": 7913367532,
+      "cum_change": {
+        "7": 1.36,
+        "30": 1.36
+      }
+    },
+    {
+      "symbol": "LYFT",
+      "name": "Lyft Inc-A",
+      "market_cap": 5689459942,
+      "cum_change": {
+        "7": 0.87,
+        "30": 0.87
+      }
+    },
+    {
+      "symbol": "IMAX",
+      "name": "IMAX Corp",
+      "market_cap": 2817239396,
+      "cum_change": {
+        "7": -0.45,
+        "30": -0.45
+      }
+    },
+    {
+      "symbol": "GOLD",
+      "name": "Gold.com Inc",
+      "market_cap": 1337474432,
+      "cum_change": {
+        "7": -7.0,
+        "30": -7.0
+      }
+    }
+  ],
+  "china_stocks": [
+    {
+      "symbol": "BABA",
+      "name": "阿里巴巴",
+      "market_cap": 269814443381,
+      "cum_change": {
+        "7": -0.78,
+        "30": -0.78
+      }
+    },
+    {
+      "symbol": "PDD",
+      "name": "拼多多",
+      "market_cap": 110797180602,
+      "cum_change": {
+        "7": -0.98,
+        "30": -0.98
+      }
+    },
+    {
+      "symbol": "NTES",
+      "name": "网易",
+      "market_cap": 74032130187,
+      "cum_change": {
+        "7": -0.22,
+        "30": -0.22
+      }
+    },
+    {
+      "symbol": "JD",
+      "name": "京东",
+      "market_cap": 36308160000,
+      "cum_change": {
+        "7": 0.06,
+        "30": 0.06
+      }
+    },
+    {
+      "symbol": "BIDU",
+      "name": "百度",
+      "market_cap": 30954167013,
+      "cum_change": {
+        "7": -1.56,
+        "30": -1.56
+      }
+    },
+    {
+      "symbol": "TCOM",
+      "name": "携程",
+      "market_cap": 24369592091,
+      "cum_change": {
+        "7": -1.25,
+        "30": -1.25
+      }
+    },
+    {
+      "symbol": "BEKE",
+      "name": "贝壳",
+      "market_cap": 19125737747,
+      "cum_change": {
+        "7": -1.01,
+        "30": -1.01
+      }
+    },
+    {
+      "symbol": "FUTU",
+      "name": "富途控股",
+      "market_cap": 15909270456,
+      "cum_change": {
+        "7": -2.79,
+        "30": -2.79
+      }
+    },
+    {
+      "symbol": "ZTO",
+      "name": "中通快递",
+      "market_cap": 15906082927,
+      "cum_change": {
+        "7": 0.56,
+        "30": 0.56
+      }
+    },
+    {
+      "symbol": "YUMC",
+      "name": "百胜中国",
+      "market_cap": 14444614242,
+      "cum_change": {
+        "7": -0.67,
+        "30": -0.67
+      }
+    },
+    {
+      "symbol": "TME",
+      "name": "腾讯音乐",
+      "market_cap": 13016574965,
+      "cum_change": {
+        "7": -0.06,
+        "30": -0.06
+      }
+    },
+    {
+      "symbol": "LI",
+      "name": "理想汽车",
+      "market_cap": 12039556565,
+      "cum_change": {
+        "7": -2.23,
+        "30": -2.23
+      }
+    },
+    {
+      "symbol": "XPEV",
+      "name": "小鹏集团",
+      "market_cap": 9899739061,
+      "cum_change": {
+        "7": -2.24,
+        "30": -2.24
+      }
+    },
+    {
+      "symbol": "NIO",
+      "name": "蔚来",
+      "market_cap": 8960014704,
+      "cum_change": {
+        "7": -3.35,
+        "30": -3.35
+      }
+    },
+    {
+      "symbol": "EDU",
+      "name": "新东方",
+      "market_cap": 8682991973,
+      "cum_change": {
+        "7": -1.68,
+        "30": -1.68
+      }
+    },
+    {
+      "symbol": "BILI",
+      "name": "哔哩哔哩",
+      "market_cap": 6477109316,
+      "cum_change": {
+        "7": -2.77,
+        "30": -2.77
+      }
+    },
+    {
+      "symbol": "TAL2",
+      "name": "好未来",
+      "market_cap": 6378426522,
+      "cum_change": {
+        "7": 0.52,
+        "30": 0.52
+      }
+    },
+    {
+      "symbol": "VIPS",
+      "name": "唯品会",
+      "market_cap": 5974657500,
+      "cum_change": {
+        "7": 0.44,
+        "30": 0.44
+      }
+    },
+    {
+      "symbol": "KC",
+      "name": "金山云",
+      "market_cap": 2971177662,
+      "cum_change": {
+        "7": -3.04,
+        "30": -3.04
+      }
+    },
+    {
+      "symbol": "MNSO",
+      "name": "名创优品",
+      "market_cap": 2745251227,
+      "cum_change": {
+        "7": -2.0,
+        "30": -2.0
+      }
+    },
+    {
+      "symbol": "ZLAB",
+      "name": "再鼎医药",
+      "market_cap": 2712352068,
+      "cum_change": {
+        "7": -3.67,
+        "30": -3.67
+      }
+    },
+    {
+      "symbol": "ATHM",
+      "name": "汽车之家",
+      "market_cap": 2497941889,
+      "cum_change": {
+        "7": 1.35,
+        "30": 1.35
+      }
+    },
+    {
+      "symbol": "RLX",
+      "name": "雾芯科技",
+      "market_cap": 2169501851,
+      "cum_change": {
+        "7": 0.85,
+        "30": 0.85
+      }
+    },
+    {
+      "symbol": "DAO",
+      "name": "网易有道",
+      "market_cap": 1792630617,
+      "cum_change": {
+        "7": 1.78,
+        "30": 1.78
+      }
+    },
+    {
+      "symbol": "WB",
+      "name": "微博",
+      "market_cap": 1623895701,
+      "cum_change": {
+        "7": -0.3,
+        "30": -0.3
+      }
+    },
+    {
+      "symbol": "LU",
+      "name": "陆金所控股",
+      "market_cap": 1053027004,
+      "cum_change": {
+        "7": 0.41,
+        "30": 0.41
+      }
+    },
+    {
+      "symbol": "QFIN",
+      "name": "奇富科技",
+      "market_cap": 1029806672,
+      "cum_change": {
+        "7": -1.51,
+        "30": -1.51
+      }
+    },
+    {
+      "symbol": "IQ",
+      "name": "爱奇艺",
+      "market_cap": 907026748,
+      "cum_change": {
+        "7": 0.7,
+        "30": 0.7
+      }
+    },
+    {
+      "symbol": "TIGR",
+      "name": "老虎证券",
+      "market_cap": 880343017,
+      "cum_change": {
+        "7": -2.68,
+        "30": -2.68
+      }
+    },
+    {
+      "symbol": "MOMO",
+      "name": "挚文集团",
+      "market_cap": 723205669,
+      "cum_change": {
+        "7": -2.8,
+        "30": -2.8
+      }
+    },
+    {
+      "symbol": "NOAH",
+      "name": "诺亚控股",
+      "market_cap": 558776511,
+      "cum_change": {
+        "7": -1.09,
+        "30": -1.09
+      }
+    },
+    {
+      "symbol": "GOTU",
+      "name": "高途",
+      "market_cap": 491266660,
+      "cum_change": {
+        "7": -2.34,
+        "30": -2.34
+      }
+    },
+    {
+      "symbol": "HUYA",
+      "name": "虎牙",
+      "market_cap": 467008660,
+      "cum_change": {
+        "7": -0.73,
+        "30": -0.73
+      }
+    },
+    {
+      "symbol": "SOHU",
+      "name": "搜狐",
+      "market_cap": 349064205,
+      "cum_change": {
+        "7": -0.67,
+        "30": -0.67
+      }
+    },
+    {
+      "symbol": "XNET",
+      "name": "迅雷",
+      "market_cap": 312328206,
+      "cum_change": {
+        "7": 0.62,
+        "30": 0.62
+      }
+    },
+    {
+      "symbol": "UXIN",
+      "name": "优信",
+      "market_cap": 272775524,
+      "cum_change": {
+        "7": 4.2,
+        "30": 4.2
+      }
+    },
+    {
+      "symbol": "SY",
+      "name": "新氧",
+      "market_cap": 263609407,
+      "cum_change": {
+        "7": -2.24,
+        "30": -2.24
+      }
+    },
+    {
+      "symbol": "YSG",
+      "name": "逸仙电商",
+      "market_cap": 245757439,
+      "cum_change": {
+        "7": -5.42,
+        "30": -5.42
+      }
+    },
+    {
+      "symbol": "NIU",
+      "name": "小牛电动",
+      "market_cap": 163147063,
+      "cum_change": {
+        "7": 1.46,
+        "30": 1.46
+      }
+    },
+    {
+      "symbol": "BZUN",
+      "name": "宝尊电商",
+      "market_cap": 159604424,
+      "cum_change": {
+        "7": -0.18,
+        "30": -0.18
+      }
+    },
+    {
+      "symbol": "DOYU",
+      "name": "斗鱼",
+      "market_cap": 137313808,
+      "cum_change": {
+        "7": 0.89,
+        "30": 0.89
+      }
+    },
+    {
+      "symbol": "LX",
+      "name": "乐信",
+      "market_cap": 132852306,
+      "cum_change": {
+        "7": -1.86,
+        "30": -1.86
+      }
+    },
+    {
+      "symbol": "CMCM",
+      "name": "猎豹移动",
+      "market_cap": 104283177,
+      "cum_change": {
+        "7": -4.15,
+        "30": -4.15
+      }
+    },
+    {
+      "symbol": "VIOT",
+      "name": "云米",
+      "market_cap": 90349524,
+      "cum_change": {
+        "7": 26.85,
+        "30": 26.85
+      }
+    },
+    {
+      "symbol": "YRD",
+      "name": "宜人智科",
+      "market_cap": 87357228,
+      "cum_change": {
+        "7": 1.09,
+        "30": 1.09
+      }
+    },
+    {
+      "symbol": "ZEPP",
+      "name": "华米科技",
+      "market_cap": 72738307,
+      "cum_change": {
+        "7": -0.8,
+        "30": -0.8
+      }
+    },
+    {
+      "symbol": "NCTY",
+      "name": "第九城市",
+      "market_cap": 57121485,
+      "cum_change": {
+        "7": -1.32,
+        "30": -1.32
+      }
+    },
+    {
+      "symbol": "TOUR",
+      "name": "途牛",
+      "market_cap": 55622434,
+      "cum_change": {
+        "7": -0.68,
+        "30": -0.68
+      }
+    },
+    {
+      "symbol": "JG",
+      "name": "极光",
+      "market_cap": 38740602,
+      "cum_change": {
+        "7": 0.46,
+        "30": 0.46
+      }
+    },
+    {
+      "symbol": "JFU",
+      "name": "玖富",
+      "market_cap": 32258932,
+      "cum_change": {
+        "7": 0.0,
+        "30": 0.0
+      }
+    },
+    {
+      "symbol": "KXIN",
+      "name": "开心汽车",
+      "market_cap": 21636595,
+      "cum_change": {
+        "7": -3.57,
+        "30": -3.57
+      }
+    },
+    {
+      "symbol": "DUO",
+      "name": "房多多",
+      "market_cap": 19705949,
+      "cum_change": {
+        "7": -2.61,
+        "30": -2.61
+      }
+    }
+  ]
+}
