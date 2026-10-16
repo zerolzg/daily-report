@@ -1,0 +1,933 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-10-16T08:05:18.216014",
+  "stocks": [
+    {
+      "name": "英伟达",
+      "symbol": "NVDA",
+      "price": 217.23,
+      "change": -4.07,
+      "change_percent": -1.84,
+      "change_amount": -981.33,
+      "market_cap": 5235243000000
+    },
+    {
+      "name": "苹果",
+      "symbol": "AAPL",
+      "price": 341.98,
+      "change": -0.98,
+      "change_percent": -0.29,
+      "change_amount": -145.16,
+      "market_cap": 4990917676400
+    },
+    {
+      "name": "谷歌-A",
+      "symbol": "GOOGL",
+      "price": 349.16,
+      "change": 1.52,
+      "change_percent": 0.44,
+      "change_amount": 187.07,
+      "market_cap": 4270226800000
+    },
+    {
+      "name": "谷歌-C",
+      "symbol": "GOOG",
+      "price": 344.86,
+      "change": 1.21,
+      "change_percent": 0.35,
+      "change_amount": 147.1,
+      "market_cap": 4217637800000
+    },
+    {
+      "name": "微软",
+      "symbol": "MSFT",
+      "price": 539.45,
+      "change": 5.76,
+      "change_percent": 1.08,
+      "change_amount": 427.99,
+      "market_cap": 4005710515120
+    },
+    {
+      "name": "亚马逊",
+      "symbol": "AMZN",
+      "price": 254.71,
+      "change": 0.63,
+      "change_percent": 0.25,
+      "change_amount": 68.51,
+      "market_cap": 2747381929924
+    },
+    {
+      "name": "台积电",
+      "symbol": "TSM",
+      "price": 422.55,
+      "change": -7.45,
+      "change_percent": -1.73,
+      "change_amount": -385.8,
+      "market_cap": 2191544588700
+    },
+    {
+      "name": "SpaceX",
+      "symbol": "SPCX",
+      "price": 148.64,
+      "change": -3.52,
+      "change_percent": -2.31,
+      "change_amount": -463.3,
+      "market_cap": 1959339771025
+    },
+    {
+      "name": "Meta Platforms Inc-A",
+      "symbol": "META",
+      "price": 736.48,
+      "change": -1.06,
+      "change_percent": -0.14,
+      "change_amount": -26.3,
+      "market_cap": 1876187384588
+    },
+    {
+      "name": "博通",
+      "symbol": "AVGO",
+      "price": 344.21,
+      "change": -2.04,
+      "change_percent": -0.59,
+      "change_amount": -97.52,
+      "market_cap": 1643131135832
+    },
+    {
+      "name": "特斯拉",
+      "symbol": "TSLA",
+      "price": 362.42,
+      "change": -4.74,
+      "change_percent": -1.29,
+      "change_amount": -187.06,
+      "market_cap": 1431394966533
+    },
+    {
+      "name": "礼来",
+      "symbol": "LLY",
+      "price": 1252.1,
+      "change": 43.36,
+      "change_percent": 3.59,
+      "change_amount": 408.49,
+      "market_cap": 1178673181087
+    },
+    {
+      "name": "美光科技",
+      "symbol": "MU",
+      "price": 931.4,
+      "change": 17.27,
+      "change_percent": 1.89,
+      "change_amount": 195.47,
+      "market_cap": 1053807579657
+    },
+    {
+      "name": "沃尔玛",
+      "symbol": "WMT",
+      "price": 117.83,
+      "change": 1.67,
+      "change_percent": 1.44,
+      "change_amount": 132.7,
+      "market_cap": 934833319577
+    },
+    {
+      "name": "超威半导体",
+      "symbol": "AMD",
+      "price": 562.42,
+      "change": -8.4,
+      "change_percent": -1.47,
+      "change_amount": -136.97,
+      "market_cap": 918136613122
+    },
+    {
+      "name": "摩根大通",
+      "symbol": "JPM",
+      "price": 335.52,
+      "change": 0.24,
+      "change_percent": 0.07,
+      "change_amount": 6.23,
+      "market_cap": 891006912000
+    },
+    {
+      "name": "埃克森美孚",
+      "symbol": "XOM",
+      "price": 174.65,
+      "change": -2.36,
+      "change_percent": -1.33,
+      "change_amount": -96.79,
+      "market_cap": 718145423814
+    },
+    {
+      "name": "维萨",
+      "symbol": "V",
+      "price": 399.76,
+      "change": 8.33,
+      "change_percent": 2.13,
+      "change_amount": 148.76,
+      "market_cap": 713343150752
+    },
+    {
+      "name": "阿斯麦",
+      "symbol": "ASML",
+      "price": 1658.52,
+      "change": 8.52,
+      "change_percent": 0.52,
+      "change_amount": 32.95,
+      "market_cap": 637037532000
+    },
+    {
+      "name": "强生",
+      "symbol": "JNJ",
+      "price": 253.4,
+      "change": -0.51,
+      "change_percent": -0.2,
+      "change_amount": -12.24,
+      "market_cap": 610668304480
+    },
+    {
+      "name": "万事达",
+      "symbol": "MA",
+      "price": 616.47,
+      "change": 13.23,
+      "change_percent": 2.19,
+      "change_amount": 115.73,
+      "market_cap": 540033847712
+    },
+    {
+      "name": "英特尔",
+      "symbol": "INTC",
+      "price": 95.3,
+      "change": -2.82,
+      "change_percent": -2.87,
+      "change_amount": -147.95,
+      "market_cap": 500657650749
+    },
+    {
+      "name": "雪佛龙",
+      "symbol": "CVX",
+      "price": 219.4,
+      "change": -2.65,
+      "change_percent": -1.19,
+      "change_amount": -52.21,
+      "market_cap": 433474338659
+    },
+    {
+      "name": "思科",
+      "symbol": "CSCO",
+      "price": 109.83,
+      "change": -3.81,
+      "change_percent": -3.35,
+      "change_amount": -150.08,
+      "market_cap": 433014316262
+    },
+    {
+      "name": "甲骨文",
+      "symbol": "ORCL",
+      "price": 134.47,
+      "change": 3.92,
+      "change_percent": 3.0,
+      "change_amount": 118.72,
+      "market_cap": 407645959506
+    },
+    {
+      "name": "可口可乐",
+      "symbol": "KO",
+      "price": 91.9,
+      "change": 0.12,
+      "change_percent": 0.13,
+      "change_amount": 5.13,
+      "market_cap": 395404275432
+    },
+    {
+      "name": "联合健康",
+      "symbol": "UNH",
+      "price": 406.72,
+      "change": 11.1,
+      "change_percent": 2.81,
+      "change_amount": 99.79,
+      "market_cap": 365069776172
+    },
+    {
+      "name": "宝洁",
+      "symbol": "PG",
+      "price": 157.06,
+      "change": 0.53,
+      "change_percent": 0.34,
+      "change_amount": 12.36,
+      "market_cap": 364798913323
+    },
+    {
+      "name": "美国银行",
+      "symbol": "BAC",
+      "price": 51.67,
+      "change": 0.28,
+      "change_percent": 0.54,
+      "change_amount": 19.21,
+      "market_cap": 357695667339
+    },
+    {
+      "name": "卡特彼勒",
+      "symbol": "CAT",
+      "price": 735.5,
+      "change": -13.48,
+      "change_percent": -1.8,
+      "change_amount": -61.97,
+      "market_cap": 338090880860
+    },
+    {
+      "name": "GE航空航天",
+      "symbol": "GE",
+      "price": 312.01,
+      "change": 4.99,
+      "change_percent": 1.63,
+      "change_amount": 51.92,
+      "market_cap": 323729879681
+    },
+    {
+      "name": "家得宝",
+      "symbol": "HD",
+      "price": 308.27,
+      "change": 12.76,
+      "change_percent": 4.32,
+      "change_amount": 127.38,
+      "market_cap": 307557781007
+    },
+    {
+      "name": "奈飞",
+      "symbol": "NFLX",
+      "price": 72.61,
+      "change": 2.04,
+      "change_percent": 2.9,
+      "change_amount": 85.22,
+      "market_cap": 302364479573
+    },
+    {
+      "name": "戴尔科技",
+      "symbol": "DELL",
+      "price": 472.78,
+      "change": -35.15,
+      "change_percent": -6.92,
+      "change_amount": -223.48,
+      "market_cap": 300599551945
+    },
+    {
+      "name": "摩根士丹利",
+      "symbol": "MS",
+      "price": 182.1,
+      "change": 0.59,
+      "change_percent": 0.33,
+      "change_amount": 9.37,
+      "market_cap": 284994325000
+    },
+    {
+      "name": "加拿大皇家银行",
+      "symbol": "RY",
+      "price": 196.67,
+      "change": 2.85,
+      "change_percent": 1.47,
+      "change_amount": 39.45,
+      "market_cap": 272275808569
+    },
+    {
+      "name": "高盛",
+      "symbol": "GS",
+      "price": 891.52,
+      "change": 12.8,
+      "change_percent": 1.46,
+      "change_amount": 37.36,
+      "market_cap": 259585133660
+    },
+    {
+      "name": "富国银行",
+      "symbol": "WFC",
+      "price": 82.76,
+      "change": 1.86,
+      "change_percent": 2.3,
+      "change_amount": 55.85,
+      "market_cap": 248415638261
+    },
+    {
+      "name": "丰田汽车(ADR)",
+      "symbol": "TM",
+      "price": 192.1,
+      "change": 3.5,
+      "change_percent": 1.86,
+      "change_amount": 41.54,
+      "market_cap": 227481624609
+    },
+    {
+      "name": "IBM国际商业机器",
+      "symbol": "IBM",
+      "price": 234.11,
+      "change": 6.23,
+      "change_percent": 2.73,
+      "change_amount": 58.62,
+      "market_cap": 220563082043
+    },
+    {
+      "name": "美国运通",
+      "symbol": "AXP",
+      "price": 313.81,
+      "change": 6.87,
+      "change_percent": 2.24,
+      "change_amount": 46.43,
+      "market_cap": 211922355243
+    },
+    {
+      "name": "花旗集团",
+      "symbol": "C",
+      "price": 123.2,
+      "change": 0.93,
+      "change_percent": 0.76,
+      "change_amount": 15.38,
+      "market_cap": 203920640000
+    },
+    {
+      "name": "赛富时",
+      "symbol": "CRM",
+      "price": 246.7,
+      "change": 10.75,
+      "change_percent": 4.56,
+      "change_amount": 88.53,
+      "market_cap": 203034100000
+    },
+    {
+      "name": "TotalEnergies SE",
+      "symbol": "TTE",
+      "price": 88.49,
+      "change": -1.15,
+      "change_percent": -1.28,
+      "change_amount": -25.52,
+      "market_cap": 196818455231
+    },
+    {
+      "name": "迪士尼",
+      "symbol": "DIS",
+      "price": 110.67,
+      "change": 1.68,
+      "change_percent": 1.54,
+      "change_amount": 28.98,
+      "market_cap": 191092439444
+    },
+    {
+      "name": "高通",
+      "symbol": "QCOM",
+      "price": 178.4,
+      "change": 5.78,
+      "change_percent": 3.35,
+      "change_amount": 61.75,
+      "market_cap": 190502568049
+    },
+    {
+      "name": "威瑞森通讯(Verizon)",
+      "symbol": "VZ",
+      "price": 44.41,
+      "change": -0.01,
+      "change_percent": -0.01,
+      "change_amount": -0.18,
+      "market_cap": 184534340597
+    },
+    {
+      "name": "百事",
+      "symbol": "PEP",
+      "price": 128.38,
+      "change": -0.89,
+      "change_percent": -0.69,
+      "change_amount": -12.15,
+      "market_cap": 174948701391
+    },
+    {
+      "name": "贝莱德",
+      "symbol": "BLK",
+      "price": 1121.06,
+      "change": 47.27,
+      "change_percent": 4.4,
+      "change_amount": 73.04,
+      "market_cap": 173315876000
+    },
+    {
+      "name": "麦当劳",
+      "symbol": "MCD",
+      "price": 242.52,
+      "change": 4.21,
+      "change_percent": 1.77,
+      "change_amount": 29.84,
+      "market_cap": 171617224098
+    },
+    {
+      "name": "康菲石油",
+      "symbol": "COP",
+      "price": 141.73,
+      "change": -0.61,
+      "change_percent": -0.43,
+      "change_amount": -7.35,
+      "market_cap": 170265560899
+    },
+    {
+      "name": "T-Mobile US Inc",
+      "symbol": "TMUS",
+      "price": 157.01,
+      "change": -0.78,
+      "change_percent": -0.49,
+      "change_amount": -8.29,
+      "market_cap": 168420169957
+    },
+    {
+      "name": "辉瑞",
+      "symbol": "PFE",
+      "price": 29.42,
+      "change": 0.21,
+      "change_percent": 0.72,
+      "change_amount": 11.99,
+      "market_cap": 167684396988
+    },
+    {
+      "name": "美国电话电报(AT&T)",
+      "symbol": "T",
+      "price": 23.5,
+      "change": 0.46,
+      "change_percent": 1.97,
+      "change_amount": 31.12,
+      "market_cap": 161065324703
+    },
+    {
+      "name": "波音",
+      "symbol": "BA",
+      "price": 188.68,
+      "change": 4.02,
+      "change_percent": 2.18,
+      "change_amount": 31.81,
+      "market_cap": 149127015374
+    },
+    {
+      "name": "瑞银集团",
+      "symbol": "UBS",
+      "price": 47.78,
+      "change": 0.64,
+      "change_percent": 1.35,
+      "change_amount": 19.49,
+      "market_cap": 146305348590
+    },
+    {
+      "name": "优步",
+      "symbol": "UBER",
+      "price": 71.22,
+      "change": 1.93,
+      "change_percent": 2.79,
+      "change_amount": 39.49,
+      "market_cap": 145471131818
+    },
+    {
+      "name": "索尼",
+      "symbol": "SONY",
+      "price": 24.68,
+      "change": 0.32,
+      "change_percent": 1.31,
+      "change_amount": 18.63,
+      "market_cap": 144127398589
+    },
+    {
+      "name": "西部数据",
+      "symbol": "WDC",
+      "price": 356.47,
+      "change": -7.63,
+      "change_percent": -2.1,
+      "change_amount": -28.61,
+      "market_cap": 133435015700
+    },
+    {
+      "name": "瓦莱罗能源",
+      "symbol": "VLO",
+      "price": 443.92,
+      "change": -15.86,
+      "change_percent": -3.45,
+      "change_amount": -45.67,
+      "market_cap": 127816758487
+    },
+    {
+      "name": "英国石油",
+      "symbol": "BP",
+      "price": 48.44,
+      "change": -0.37,
+      "change_percent": -0.76,
+      "change_amount": -9.71,
+      "market_cap": 126797083355
+    },
+    {
+      "name": "洛克希德马丁",
+      "symbol": "LMT",
+      "price": 532.88,
+      "change": 10.65,
+      "change_percent": 2.04,
+      "change_amount": 24.59,
+      "market_cap": 122983776459
+    },
+    {
+      "name": "纽蒙特",
+      "symbol": "NEM",
+      "price": 115.68,
+      "change": 4.12,
+      "change_percent": 3.69,
+      "change_amount": 43.38,
+      "market_cap": 121891121909
+    },
+    {
+      "name": "Phillips 66",
+      "symbol": "PSX",
+      "price": 289.1,
+      "change": -8.2,
+      "change_percent": -2.76,
+      "change_amount": -32.75,
+      "market_cap": 115354951711
+    },
+    {
+      "name": "力拓",
+      "symbol": "RIO",
+      "price": 90.22,
+      "change": -1.03,
+      "change_percent": -1.13,
+      "change_amount": -12.94,
+      "market_cap": 113239950935
+    },
+    {
+      "name": "星巴克",
+      "symbol": "SBUX",
+      "price": 96.87,
+      "change": 3.62,
+      "change_percent": 3.88,
+      "change_amount": 41.24,
+      "market_cap": 110431800000
+    },
+    {
+      "name": "奥多比",
+      "symbol": "ADBE",
+      "price": 251.65,
+      "change": 10.97,
+      "change_percent": 4.56,
+      "change_amount": 42.7,
+      "market_cap": 97942180000
+    },
+    {
+      "name": "法拉利",
+      "symbol": "RACE",
+      "price": 398.19,
+      "change": 10.84,
+      "change_percent": 2.8,
+      "change_amount": 25.22,
+      "market_cap": 92555783071
+    },
+    {
+      "name": "穆迪",
+      "symbol": "MCO",
+      "price": 483.71,
+      "change": 20.94,
+      "change_percent": 4.52,
+      "change_amount": 36.24,
+      "market_cap": 83769373771
+    },
+    {
+      "name": "黑石集团",
+      "symbol": "BX",
+      "price": 109.27,
+      "change": 3.06,
+      "change_percent": 2.88,
+      "change_amount": 22.95,
+      "market_cap": 82020806207
+    },
+    {
+      "name": "康卡斯特",
+      "symbol": "CMCSA",
+      "price": 21.76,
+      "change": 0.71,
+      "change_percent": 3.37,
+      "change_amount": 25.17,
+      "market_cap": 77218331828
+    },
+    {
+      "name": "巴克莱",
+      "symbol": "BCS",
+      "price": 22.8,
+      "change": 0.06,
+      "change_percent": 0.26,
+      "change_amount": 1.98,
+      "market_cap": 76278001584
+    },
+    {
+      "name": "高露洁",
+      "symbol": "CL",
+      "price": 92.64,
+      "change": -0.14,
+      "change_percent": -0.15,
+      "change_amount": -1.11,
+      "market_cap": 73850090879
+    },
+    {
+      "name": "通用汽车",
+      "symbol": "GM",
+      "price": 83.65,
+      "change": 0.6,
+      "change_percent": 0.72,
+      "change_amount": 5.25,
+      "market_cap": 73398821405
+    },
+    {
+      "name": "斯伦贝谢",
+      "symbol": "SLB",
+      "price": 48.37,
+      "change": -0.14,
+      "change_percent": -0.29,
+      "change_amount": -2.09,
+      "market_cap": 71785039797
+    },
+    {
+      "name": "塔吉特",
+      "symbol": "TGT",
+      "price": 156.61,
+      "change": 1.3,
+      "change_percent": 0.84,
+      "change_amount": 5.92,
+      "market_cap": 71147411825
+    },
+    {
+      "name": "德意志银行",
+      "symbol": "DB",
+      "price": 32.87,
+      "change": 0.07,
+      "change_percent": 0.21,
+      "change_amount": 1.3,
+      "market_cap": 61762730000
+    },
+    {
+      "name": "恩智浦半导体",
+      "symbol": "NXPI",
+      "price": 231.08,
+      "change": 10.25,
+      "change_percent": 4.64,
+      "change_amount": 25.85,
+      "market_cap": 58270097328
+    },
+    {
+      "name": "纽柯钢铁",
+      "symbol": "NUE",
+      "price": 254.64,
+      "change": -2.47,
+      "change_percent": -0.96,
+      "change_amount": -5.6,
+      "market_cap": 57771622137
+    },
+    {
+      "name": "淡水河谷",
+      "symbol": "VALE",
+      "price": 13.02,
+      "change": -0.2,
+      "change_percent": -1.48,
+      "change_amount": -8.32,
+      "market_cap": 55388752621
+    },
+    {
+      "name": "耐克",
+      "symbol": "NKE",
+      "price": 37.17,
+      "change": 1.87,
+      "change_percent": 5.3,
+      "change_amount": 27.78,
+      "market_cap": 55208929174
+    },
+    {
+      "name": "诺基亚",
+      "symbol": "NOK",
+      "price": 9.57,
+      "change": 0.17,
+      "change_percent": 1.81,
+      "change_amount": 9.78,
+      "market_cap": 54953233891
+    },
+    {
+      "name": "易趣",
+      "symbol": "EBAY",
+      "price": 122.9,
+      "change": 6.02,
+      "change_percent": 5.15,
+      "change_amount": 26.79,
+      "market_cap": 54690500000
+    },
+    {
+      "name": "达美航空",
+      "symbol": "DAL",
+      "price": 78.08,
+      "change": 1.64,
+      "change_percent": 2.15,
+      "change_amount": 10.82,
+      "market_cap": 51366509069
+    },
+    {
+      "name": "福特汽车",
+      "symbol": "F",
+      "price": 12.31,
+      "change": 0.26,
+      "change_percent": 2.16,
+      "change_amount": 10.38,
+      "market_cap": 49087302661
+    },
+    {
+      "name": "PayPal Holdings Inc",
+      "symbol": "PYPL",
+      "price": 57.14,
+      "change": 1.04,
+      "change_percent": 1.85,
+      "change_amount": 8.88,
+      "market_cap": 48881034340
+    },
+    {
+      "name": "汤森路透",
+      "symbol": "TRI",
+      "price": 107.91,
+      "change": 2.51,
+      "change_percent": 2.38,
+      "change_amount": 10.88,
+      "market_cap": 46752156632
+    },
+    {
+      "name": "本田汽车",
+      "symbol": "HMC",
+      "price": 34.05,
+      "change": 0.6,
+      "change_percent": 1.79,
+      "change_amount": 7.77,
+      "market_cap": 44185738217
+    },
+    {
+      "name": "美国国际集团",
+      "symbol": "AIG",
+      "price": 79.1,
+      "change": 1.67,
+      "change_percent": 2.16,
+      "change_amount": 8.75,
+      "market_cap": 41360849668
+    },
+    {
+      "name": "Yum! Brands Inc",
+      "symbol": "YUM",
+      "price": 150.87,
+      "change": 4.17,
+      "change_percent": 2.85,
+      "change_amount": 11.42,
+      "market_cap": 41171222189
+    },
+    {
+      "name": "沃达丰",
+      "symbol": "VOD",
+      "price": 15.85,
+      "change": 0.34,
+      "change_percent": 2.16,
+      "change_amount": 7.76,
+      "market_cap": 36708518281
+    },
+    {
+      "name": "爱立信",
+      "symbol": "ERIC",
+      "price": 10.71,
+      "change": 1.14,
+      "change_percent": 11.85,
+      "change_amount": 36.87,
+      "market_cap": 34776023076
+    },
+    {
+      "name": "惠普",
+      "symbol": "HPQ",
+      "price": 30.84,
+      "change": 0.39,
+      "change_percent": 1.26,
+      "change_amount": 3.46,
+      "market_cap": 27815742439
+    },
+    {
+      "name": "哈里伯顿",
+      "symbol": "HAL",
+      "price": 32.89,
+      "change": 0.06,
+      "change_percent": 0.18,
+      "change_amount": 0.49,
+      "market_cap": 27401657771
+    },
+    {
+      "name": "福克斯-A",
+      "symbol": "FOXA",
+      "price": 63.98,
+      "change": 1.77,
+      "change_percent": 2.85,
+      "change_amount": 7.48,
+      "market_cap": 26978678336
+    },
+    {
+      "name": "福克斯-B",
+      "symbol": "FOX",
+      "price": 57.14,
+      "change": 1.46,
+      "change_percent": 2.62,
+      "change_amount": 6.15,
+      "market_cap": 24094430761
+    },
+    {
+      "name": "陶氏",
+      "symbol": "DOW",
+      "price": 29.66,
+      "change": 0.47,
+      "change_percent": 1.63,
+      "change_amount": 3.43,
+      "market_cap": 21428237192
+    },
+    {
+      "name": "华纳音乐",
+      "symbol": "WMG",
+      "price": 30.69,
+      "change": 1.78,
+      "change_percent": 6.16,
+      "change_amount": 9.34,
+      "market_cap": 16054761920
+    },
+    {
+      "name": "Pinterest Inc-A",
+      "symbol": "PINS",
+      "price": 22.7,
+      "change": 0.94,
+      "change_percent": 4.3,
+      "change_amount": 5.32,
+      "market_cap": 12852474148
+    },
+    {
+      "name": "Dropbox Inc-A",
+      "symbol": "DBX",
+      "price": 36.55,
+      "change": 0.93,
+      "change_percent": 2.6,
+      "change_amount": 2.08,
+      "market_cap": 8248545820
+    },
+    {
+      "name": "Lyft Inc-A",
+      "symbol": "LYFT",
+      "price": 17.16,
+      "change": 0.68,
+      "change_percent": 4.13,
+      "change_amount": 2.58,
+      "market_cap": 6495750673
+    },
+    {
+      "name": "IMAX Corp",
+      "symbol": "IMAX",
+      "price": 51.57,
+      "change": -0.12,
+      "change_percent": -0.23,
+      "change_amount": -0.06,
+      "market_cap": 2828207819
+    },
+    {
+      "name": "Gold.com Inc",
+      "symbol": "GOLD",
+      "price": 39.66,
+      "change": 0.94,
+      "change_percent": 2.44,
+      "change_amount": 0.29,
+      "market_cap": 1154110729
+    }
+  ]
+}
