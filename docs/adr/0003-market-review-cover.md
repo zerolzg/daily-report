@@ -14,4 +14,4 @@
 - 封面文案依赖底图本身：打包字体 `NotoSansSC.ttf` 只含数字与「年月日/星期」字形，封面上不能再绘制其他中文（如「市场复盘」二字无字形，实测渲染为空白）。
 - `review.png` 入库约 2.3MB，构图变更需同步更新 `_LAYOUTS["review.png"]`。
 - `send_summary` 的 caption 文案由调用方决定，新增推送类型需自行给出 `link_text`，否则沿用简报文案。
-- 底图文件名与推送标题的绑定关系集中在 `cover.py`，`CONTEXT.md` 的「底图」词条同步指向 `_TEMPLATE_BY_PUSH_TITLE`。
+- 底图文件名与推送标题的绑定关系集中在 `cover.py`，`GLOSSARY.md` 的「底图」词条同步指向 `_TEMPLATE_BY_PUSH_TITLE`。
