@@ -1,11 +1,11 @@
 {
   "version": "1.0",
-  "generated_at": "2026-10-24T08:05:17.886923",
+  "generated_at": "2026-10-25T08:05:18.386505",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-10-24",
+      "date": "2026-10-25",
       "data": [
         {
           "name": "WTI原油",
@@ -37,9 +37,9 @@
         },
         {
           "name": "现货白银",
-          "value": -1.23,
+          "value": -1.2,
           "direction": "down",
-          "close": 53.907,
+          "close": 53.923,
           "category": "贵金属"
         },
         {
@@ -100,9 +100,9 @@
         },
         {
           "name": "澳元/美元",
-          "value": 0.25,
+          "value": 0.24,
           "direction": "up",
-          "close": 0.70357,
+          "close": 0.70349,
           "category": "货币"
         },
         {
@@ -114,16 +114,16 @@
         },
         {
           "name": "美元指数",
-          "value": 0.14,
+          "value": 0.15,
           "direction": "up",
-          "close": 101.767,
+          "close": 101.776,
           "category": "货币"
         },
         {
           "name": "欧元/美元",
-          "value": -0.12,
+          "value": -0.13,
           "direction": "down",
-          "close": 1.12,
+          "close": 1.1199,
           "category": "货币"
         },
         {
@@ -137,7 +137,7 @@
           "name": "美元/日元",
           "value": 0.04,
           "direction": "up",
-          "close": 156.818,
+          "close": 156.82,
           "category": "货币"
         }
       ]
