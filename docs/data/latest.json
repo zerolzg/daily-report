@@ -1,11 +1,11 @@
 {
   "version": "1.0",
-  "generated_at": "2026-10-31T08:05:17.616334",
+  "generated_at": "2026-11-01T08:05:18.270332",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "data": [
         {
           "name": "现货白银",
