@@ -1,11 +1,11 @@
 {
   "version": "1.0",
-  "generated_at": "2026-11-08T08:05:18.033395",
+  "generated_at": "2026-11-09T08:05:17.818171",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-11-08",
+      "date": "2026-11-09",
       "data": [
         {
           "name": "日经225指数",
@@ -36,6 +36,13 @@
           "category": "股指"
         },
         {
+          "name": "布伦特原油",
+          "value": -1.13,
+          "direction": "down",
+          "close": 96.72,
+          "category": "能源"
+        },
+        {
           "name": "上证指数",
           "value": -1.1,
           "direction": "down",
@@ -43,17 +50,10 @@
           "category": "股指"
         },
         {
-          "name": "布伦特原油",
-          "value": -1.09,
-          "direction": "down",
-          "close": 96.76,
-          "category": "能源"
-        },
-        {
           "name": "澳元/美元",
-          "value": -0.94,
+          "value": -0.97,
           "direction": "down",
-          "close": 0.68634,
+          "close": 0.68619,
           "category": "货币"
         },
         {
@@ -72,16 +72,16 @@
         },
         {
           "name": "欧元/美元",
-          "value": -0.72,
+          "value": -0.73,
           "direction": "down",
-          "close": 1.1137,
+          "close": 1.1136,
           "category": "货币"
         },
         {
           "name": "美元指数",
-          "value": 0.71,
+          "value": 0.72,
           "direction": "up",
-          "close": 102.317,
+          "close": 102.324,
           "category": "货币"
         },
         {
@@ -107,9 +107,9 @@
         },
         {
           "name": "现货黄金",
-          "value": -0.45,
+          "value": -0.43,
           "direction": "down",
-          "close": 4070.12,
+          "close": 4070.66,
           "category": "贵金属"
         },
         {
