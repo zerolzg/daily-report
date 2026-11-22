@@ -1,12 +1,19 @@
 {
   "version": "1.0",
-  "generated_at": "2026-11-21T08:05:17.741150",
+  "generated_at": "2026-11-22T08:05:18.491794",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-11-21",
+      "date": "2026-11-22",
       "data": [
+        {
+          "name": "深证成指",
+          "value": 7.21,
+          "direction": "up",
+          "close": 10996.29,
+          "category": "股指"
+        },
         {
           "name": "日经225指数",
           "value": -4.69,
@@ -26,13 +33,6 @@
           "value": -3.55,
           "direction": "down",
           "close": 6924.67,
-          "category": "股指"
-        },
-        {
-          "name": "深证成指",
-          "value": -3.09,
-          "direction": "down",
-          "close": 10256.39,
           "category": "股指"
         },
         {
