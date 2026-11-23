@@ -1,11 +1,11 @@
 {
   "version": "1.0",
-  "generated_at": "2026-11-22T08:05:18.491794",
+  "generated_at": "2026-11-23T08:05:18.012056",
   "assets": [
     {
       "type": "horizontal_bar",
       "title": "全球主要资产标的表现排名",
-      "date": "2026-11-22",
+      "date": "2026-11-23",
       "data": [
         {
           "name": "深证成指",
